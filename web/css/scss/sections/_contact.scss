@@ -1,0 +1,281 @@
+/**
+ *
+ * Contact & Map Sections
+ *
+ */
+
+
+/* Contact 1 */
+
+.contact-1 {
+  .contact-detail {
+    margin: $large 0;
+    text-align: left;
+    .seperator {
+      margin-left: 0;
+      margin-bottom: $mini;
+    }
+    a {
+      display: block;
+      margin-bottom: $micro/2;
+      color: $dark-1;
+      @include transition(all $base-duration $base-timing);
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+  .contact-form {
+    margin-top: $large;
+    .seperator {
+      margin-left: 0;
+      margin-bottom: $mini;
+    }
+  }
+}
+
+
+/* Contact 2 */
+
+.contact-2 {
+  #map {
+    width: 80%;
+    height: 560px;
+    margin: 0 auto;
+  }
+  @include respond-to (laptop) {
+    #map {
+      margin: 0 auto $medium;
+    }
+    .contact-form {
+      text-align: center;
+    }
+  }
+}
+
+
+/* Contact 3 */
+
+.contact-3 {
+  .contact-details {
+    padding-bottom: $large;
+  }
+  .contact-detail {
+    padding-bottom: $large;
+    border-bottom: 1px solid $stroke;
+    i {
+      font-size: rem(48);
+      margin-bottom: $small;
+      color: $set1-accent-1;
+    }
+    p {
+      margin-bottom: $micro/2;
+    }
+    a {
+      display: block;
+      margin-bottom: $micro/2;
+      color: $dark-1;
+      @include transition(all $base-duration $base-timing);
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+  .form-section {
+    text-align: center;
+    h3 {
+      margin: $large auto $small;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @include respond-to(laptop) {
+    .contact-details {
+      padding-bottom: $large;
+      .contact-detail {
+        padding-bottom: $medium;
+        border: none;
+      }
+    }
+  }
+}
+
+
+/* Contact 4 */
+
+.contact-4 {
+  .contact-card {
+    padding: $large $micro;
+    @extend %card;
+    .freelance-social {
+      ul {
+         :last-child {
+          margin-right: 0;
+        }
+        li {
+          display: inline-block;
+          margin: 0 $mini 0 0;
+          a {
+            font-size: rem($small);
+            color: $dark-1;
+            @include transition(all .1s $base-timing);
+            &:active,
+            &:focus,
+            &:hover {
+              color: $dark-2;
+            }
+            @include respond-to(tablet) {
+              font-size: rem($mini);
+            }
+          }
+          @include respond-to(phone) {
+            margin: 0 $micro 0 0;
+          }
+        }
+      }
+    }
+    .seperator-middle {
+      margin: $medium 0;
+      .seperator {
+        width: $medium;
+        background: $stroke;
+      }
+    }
+    .big-link {
+      display: inline-block;
+      font-family: $heading-font-family;
+      font-size: rem($medium);
+      line-height: 1;
+      color: $dark-2;
+      @include respond-to(laptop) {
+        font-size: rem($small);
+      }
+      @include respond-to(tablet) {
+        font-size: rem($mini);
+      }
+      @include respond-to(sphone) {
+        font-size: rem($micro);
+      }
+    }
+    @include respond-to(tablet) {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: $medium 0;
+    }
+    @include respond-to(phone) {
+      max-width: 95%;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+/* Contact 5 */
+
+.contact-5 {
+  @extend .contact-3;
+  .contact-detail {
+    i {
+      width: $huge;
+      height: $huge;
+      @extend %card;
+      border-radius: 100%;
+      font-size: rem($medium);
+      line-height: $huge;
+      color: $dark-2;
+    }
+  }
+}
+
+
+/* Contact 6 */
+
+.contact-6 {
+  padding-top: 0;
+  #map {
+    width: 100%;
+    height: $mammoth*2;
+    margin-bottom: $large;
+  }
+  .form-section {
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+/* Contact 7 */
+
+.contact-7 {
+  .contact-detail {
+    margin: $large 0; //text-align: right;
+    .seperator {
+      //margin-left: 0;
+      margin-bottom: $mini;
+    }
+    a {
+      display: block;
+      color: $dark-1;
+      @include transition(all $base-duration $base-timing);
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+  #map {
+    width: 80%;
+    height: 560px;
+    margin: $medium auto 0 auto;
+  }
+}
+
+
+/* Map and Timing - Restaurent & Coffeehouse */
+
+.timings {
+  #map {
+    width: 80%;
+    height: 480px;
+    margin: 0 auto;
+  }
+  .timing-heading {
+    margin-bottom: $small;
+    padding-bottom: $micro;
+    border-bottom: 1px solid $stroke;
+  }
+  ul {
+    li {
+      margin-bottom: $small;
+      @include clearfix;
+      .day {
+        float: left;
+        color: $dark-2;
+      }
+      .time {
+        float: right;
+      }
+      .closed {
+        margin-bottom: $micro/2;
+        padding: $micro/4;
+        color: $set1-accent-1;
+        border: 1px solid $set1-accent-1;
+        border-radius: $micro/4;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    #map {
+      margin-bottom: $medium;
+    }
+  }
+}

@@ -1,0 +1,540 @@
+/**
+ *
+ * Device Sections
+ *
+ */
+
+
+/* Phone Centerpiece 1 - App 1 */
+
+.phone-centerpiece-1 {
+  .section-content {
+    p {
+      margin-bottom: $large;
+    }
+    img {
+      max-height: $mammoth*6;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+/* Phone Centerpiece 2 - App 3 */
+
+.phone-centerpiece-2 {
+  .centerpiece-img {
+    max-width: 90%;
+    margin: 0 auto;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .feature-left {
+    text-align: right;
+  }
+  .feature-right {
+    text-align: left;
+  }
+  .feature {
+    margin-bottom: $small;
+    i {
+      font-size: rem($medium);
+      margin-bottom: $micro;
+      color: $set3-accent-1;
+    }
+    h4 {
+      margin-bottom: $micro;
+    }
+  }
+  @include respond-to(laptop) {
+    .feature-left,
+    .feature-right {
+      text-align: center;
+    }
+    .centerpiece-img,
+    .feature-left {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* Phone Centerpiece 3 - App 4 */
+
+.phone-centerpiece-3 {
+  .centerpiece-img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .feature {
+    padding: $huge 0;
+    border-bottom: 1px solid $stroke;
+    i {
+      font-size: rem($medium);
+      margin-bottom: $micro;
+      color: $set3-accent-1;
+    }
+    h4 {
+      margin-bottom: $micro;
+    }
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  @include respond-to(laptop) {
+    .feature {
+      padding: $medium 0;
+      border-bottom: none;
+    }
+  }
+}
+
+
+/* Phone Centerpiece 4 - App 4 */
+
+.phone-centerpiece-4 {
+  .device-img {
+    margin-bottom: $large;
+    img {
+      max-height: $mammoth*4;
+      margin: 0 auto;
+    }
+  }
+  .feature-icons {
+    i {
+      font-size: rem($medium);
+      margin-bottom: $mini;
+      color: $set3-accent-1;
+    }
+    h4 {
+      margin-bottom: $small;
+    }
+  }
+  @include respond-to(laptop) {
+    .feature-icons {
+      margin: $medium 0;
+    }
+  }
+}
+
+
+/* Feature Devices Section Left & Right */
+
+.phone-features-1 {
+  .feature-text {
+    padding-top: $mammoth;
+    text-align: left;
+    .section-heading {
+      h2 {
+        text-align: left;
+      }
+      .seperator {
+        margin-left: 0;
+      }
+    }
+  }
+  .accordian {
+    margin-top: $medium;
+    i {
+      font-size: rem($small);
+      margin-right: $micro;
+      vertical-align: middle;
+      color: $set3-accent-1;
+    }
+  }
+  .feature-list {
+    margin-top: $medium;
+    text-align: left;
+    h4 {
+      margin-bottom: $small;
+    }
+    ul {
+      li {
+        margin-bottom: $micro;
+        i {
+          font-size: rem($small);
+          vertical-align: middle;
+          color: $dark-2;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .device-img {
+    max-width: 360px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  @include respond-to(laptop) {
+    .feature-text {
+      text-align: center;
+      .section-heading {
+        h2 {
+          text-align: center;
+        }
+        .seperator {
+          margin-left: auto;
+        }
+      }
+    }
+    .accordian {
+      margin-bottom: $medium;
+    }
+    .feature-list {
+      text-align: center;
+    }
+  }
+}
+
+
+/* Feature Phone Section Left & Right - With Icon Blocks */
+
+.phone-features-2 {
+  .features-block {
+    padding-top: $large;
+    .feature-icons {
+      margin-bottom: $small;
+      padding: $mini;
+      text-align: left;
+      border-radius: $micro / 4;
+      @extend %card;
+      i {
+        font-size: $small;
+        margin-bottom: $micro;
+        color: $dark-2;
+      }
+      h4 {
+        margin-bottom: $mini;
+      }
+    }
+  }
+  .device-img {
+    max-width: 360px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+/* Browser Centerpiece 1 - Web Service 1 */
+
+.browser-centerpiece-1 {
+  p {
+    margin-bottom: $medium;
+  }
+  .center-img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+/* Browser Centerpiece 2 - Web Service 2 */
+
+.browser-centerpiece-2 {
+  .center-img {
+    margin-bottom: $large;
+  }
+  .feature {
+    i {
+      font-size: rem($medium);
+      margin-bottom: $micro;
+      color: $dark-2;
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+    @include respond-to(laptop) {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* Tablet Features 1 - Web Service 3 */
+
+.tablet-features-1 {
+  padding-bottom: 0;
+  position: relative;
+  .feature-text {
+    padding-top: $large;
+    text-align: left;
+    .seperator {
+      margin-left: 0;
+    }
+  }
+  .feature-list {
+    margin-top: $medium;
+    text-align: left;
+    h4 {
+      margin-bottom: $small;
+    }
+    ul {
+      li {
+        margin-bottom: $micro;
+        i {
+          font-size: rem($small);
+          vertical-align: middle;
+          color: $dark-2;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .feature-text {
+      padding-top: 0;
+      text-align: center;
+      .seperator {
+        margin-left: auto;
+      }
+    }
+    .feature-list {
+      text-align: center;
+    }
+  }
+}
+
+
+/* Browser Features 1 - Web Service 3 */
+
+.browser-features-1 {
+  .feature-img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .feature-text {
+    text-align: left;
+  }
+  .seperator {
+    margin-left: 0;
+  }
+  @include respond-to(laptop) {
+    .feature-img {
+      margin-bottom: $medium;
+    }
+    .feature-text {
+      text-align: center;
+    }
+    .seperator {
+      margin-left: auto;
+    }
+  }
+}
+
+
+/* Responsive Centerpiece - Ebook 2 */
+
+.responsive-centerpiece-1 {
+  .content {
+    margin-bottom: $large;
+  }
+  .img-centerpiece {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+/* Hosting - Benefits */
+
+.server-features-1 {
+  .device-img {
+    max-width: 80%;
+    margin: 128px auto 0;
+  }
+  .features-content {
+    text-align: left;
+    .seperator {
+      margin-left: 0;
+    }
+    .feature {
+      margin-bottom: $small;
+      i {
+        font-size: rem($medium);
+        margin-bottom: $micro;
+        color: $set2-accent-1;
+      }
+      h4 {
+        margin-bottom: $micro / 2;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .device-img {
+      margin-bottom: $large;
+    }
+    .features-content {
+      text-align: center;
+      .seperator {
+        margin-left: auto;
+      }
+      .feature {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+
+/* Product Features 1 */
+
+.watch-features-1 {
+  text-align: left;
+  .section-heading {
+    .seperator {
+      margin-left: 0;
+    }
+  }
+  .watch-img {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: $mammoth;
+  }
+  .feature {
+    margin: $small 0;
+    i {
+      margin-bottom: $micro;
+      font-size: rem($medium);
+      color: $dark-2;
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+    .product-img {
+      padding-top: 0;
+      margin-bottom: $medium;
+    }
+    .section-heading {
+      .seperator {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+
+/* Product Features 2 */
+
+.watch-features-2 {
+  .feature-content {
+    text-align: left;
+    padding-top: $mammoth;
+    .seperator {
+      margin-left: 0;
+    }
+    p {
+      margin-bottom: $medium;
+    }
+    .feature-list {
+      margin-top: $medium;
+      text-align: left;
+      h4 {
+        margin-bottom: $small;
+      }
+      ul {
+        li {
+          margin-bottom: $micro;
+          color: $light-1;
+          i {
+            font-size: rem($small);
+            vertical-align: middle;
+            color: $light-1;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .feature-content {
+      text-align: center;
+      margin-bottom: $medium;
+      .seperator {
+        margin-left: auto;
+      }
+      .feature-list {
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+/* Product Features 3 */
+
+.watch-features-3 {
+  text-align: left;
+  .section-heading {
+    .seperator {
+      margin-left: 0;
+    }
+  }
+  .watch-img {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: $mammoth;
+  }
+  .feature {
+    margin: $medium 0;
+    position: relative;
+    i {
+      position: absolute;
+      z-index: -9999;
+      top: - $small;
+      left: - $small;
+      color: $stroke;
+      font-size: rem($huge);
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    .product-img {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* Product Features 4 */
+
+.watch-features-4 {
+  text-align: left;
+  .feature {
+    position: relative;
+    margin-bottom: $medium;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    i {
+      position: absolute;
+      z-index: -9999;
+      top: - $small;
+      left: - $small; //pointer-events: none;
+      color: $stroke;
+      font-size: rem($huge);
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  .watch-img {
+    padding-top: $mammoth;
+  }
+}

@@ -1,0 +1,367 @@
+/**
+ *
+ * General Footer Styles
+ *
+ */
+
+footer {
+  padding: $giant/2 0;
+  .social-icons {
+    ul {
+      li {
+        display: inline-block;
+        margin: 0 $mini 0 0;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        a {
+          font-size: $mini;
+        }
+        @include respond-to(tablet) {
+          margin: 0 $micro 0 0;
+          a {
+            font-size: $micro;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-light {
+  background: $light-1;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark-2;
+  }
+  p {
+    color: $dark-1;
+  }
+  ul {
+    li {
+      color: $dark-1;
+      a {
+        color: $dark-2;
+        @include transition(all .1s $base-timing);
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  a {
+    color: $dark-2;
+    @include transition(all .1s $base-timing);
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-dark {
+  background: $dark-2;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $light-2;
+  }
+  p {
+    color: $light-1;
+  }
+  ul {
+    li {
+      color: $light-1;
+      a {
+        color: $light-2;
+        @include transition(all .1s $base-timing);
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  a {
+    color: $light-2;
+    @include transition(all .1s $base-timing);
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+/**
+ *
+ * Custom Footer Styles
+ *
+ */
+
+
+/* Footer 1 */
+
+.footer-1 {
+  .logo {
+    margin-bottom: $small;
+  }
+}
+
+
+/* Footer 2 */
+
+.footer-2 {
+  .logo {
+    margin-bottom: $small;
+  }
+  .social-icons {
+    margin-bottom: $micro;
+  }
+  .copyright {
+    p {
+      display: inline-block;
+      margin-right: 2px;
+    }
+  }
+}
+
+
+/* Footer 3 */
+
+.footer-3 {
+  .logo {
+    margin-bottom: $mini;
+  }
+  .copyright {
+    p {
+      display: inline-block;
+      margin-right: 2px;
+    }
+  }
+}
+
+
+/* Footer 4 */
+
+.footer-4 {
+  text-align: left;
+  @include clearfix;
+  .social-icons {
+    float: right;
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+    .logo {
+      margin-bottom: $mini;
+    }
+    .social-icons {
+      float: none;
+    }
+  }
+}
+
+
+/* Footer 5 */
+
+.footer-5 {
+  .logo {
+    margin-bottom: $mini;
+  }
+  a {
+    margin-right: $micro;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+
+/* Footer 6 */
+
+.footer-6 {
+  .footer-content {
+    margin: $medium 0 $mini;
+  }
+  .cta {
+    margin-top: $mini;
+  }
+}
+
+
+/* Footer 7 */
+
+.footer-7 {
+  .logo {
+    margin-bottom: $small;
+  }
+  .footer-nav-container {
+    margin-bottom: $small;
+    padding-bottom: $small;
+    border-bottom: 1px solid $stroke;
+    .footer-nav {
+      li {
+        display: inline-block;
+        margin: 0 $micro;
+      }
+    }
+  }
+  .footer-info-container {
+    .footer-info {
+      li {
+        display: inline-block;
+        padding: 0 $micro;
+        border-right: 1px solid $stroke;
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+  @include respond-to(phone) {
+    .footer-nav-container {
+      .footer-nav {
+        margin-bottom: $small;
+        li {
+          margin: 0 $micro / 4;
+        }
+      }
+    }
+    .footer-info-container {
+      .footer-info {
+        li {
+          display: block;
+          border-right: none;
+          margin-bottom: $micro;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Footer 8 */
+
+.footer-8 {
+  text-align: left;
+  img {
+    margin-bottom: $mini;
+  }
+  p {
+    margin-bottom: $mini;
+  }
+  h5 {
+    margin-bottom: $micro;
+  }
+  ul {
+    li {
+      padding: $micro/4 0;
+    }
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+    .footer-single,
+    .subscription {
+      margin: $medium 0;
+    }
+  }
+}
+
+
+/* Footer 9 */
+
+.footer-9 {
+  text-align: left;
+  h4 {
+    margin-bottom: $micro;
+  }
+  .about-content {
+    margin-bottom: $micro;
+  }
+  .address,
+  .phone {
+    margin-bottom: $mini;
+  }
+  .phone {
+    a {
+      display: block;
+    }
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+    .footer-single,
+    .subscription {
+      margin: $medium 0;
+    }
+    .about,
+    .info {
+      margin-bottom: $medium;
+    }
+    form {
+      margin-bottom: $micro;
+    }
+  }
+}
+
+
+/* Footer 10 */
+
+.footer-10 {
+  .address {
+    text-align: left;
+    h5 {
+      margin-bottom: $micro;
+      i {
+        vertical-align: top;
+        color: $light-1;
+        font-size: rem($mini);
+      }
+    }
+  }
+  .social-icons {
+    padding-top: $mini;
+    @include clearfix;
+    ul {
+      float: right;
+       :last-child {
+        margin-right: 0;
+      }
+      @include respond-to(laptop) {
+        float: none;
+        li {
+          margin: 0 $micro 0 0;
+          a {
+            font-size: $base-font-size;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    margin-top: $small;
+    p {
+      display: inline-block;
+      margin-right: 2px;
+    }
+  }
+  @include respond-to (laptop) {
+    .address {
+      text-align: center;
+    }
+  }
+}

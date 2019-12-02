@@ -1,0 +1,84 @@
+.coming-soon {
+  min-height: 100vh;
+  padding: 0;
+  background: url('../img/bg-coming-soon.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .color-overlay {
+    min-height: 100vh;
+    padding: $large 0;
+    .logo {
+      margin-bottom: $huge;
+    }
+  }
+}
+
+
+/* Coming Soon 1 */
+
+.coming-soon-card-1,
+.coming-soon-card-2 {
+  text-align: left;
+  @extend %coming-soon-card;
+  .seperator {
+    margin-left: 0;
+  }
+  #countdown {
+    font-family: $heading-font-family;
+    font-size: rem(48);
+    margin-bottom: $medium;
+    color: $dark-2;
+  }
+  @include respond-to(tablet) {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: $small $micro;
+    text-align: center;
+    .seperator {
+      margin-left: auto;
+    }
+    #countdown {
+      font-size: rem($mini);
+    }
+  }
+}
+
+
+/* Coming Soon 3 */
+
+.coming-soon-card-3,
+.coming-soon-card-4 {
+  @extend %coming-soon-card;
+  #countdown-2 {
+    margin: 0 auto;
+    .countdown-time {
+      margin-right: $small;
+      display: inline-block;
+      .counter {
+        font-family: $heading-font-family;
+        font-size: rem($medium);
+        color: $dark-2;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .subscription {
+    margin-top: $medium;
+  }
+  @include respond-to(tablet) {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: $small $micro;
+    #countdown-2 {
+      .countdown-time {
+        margin-right: $micro;
+        .counter {
+          font-size: $mini;
+        }
+      }
+    }
+  }
+}

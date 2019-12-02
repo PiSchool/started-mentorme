@@ -1,0 +1,624 @@
+  /**
+ *
+ * Special Section
+ *
+ */
+  /* Agency Process */
+  
+  .process-1 {
+    .process {
+      position: relative;
+      h1 {
+        position: absolute;
+        z-index: -9999;
+        top: 0;
+        left: 0;
+        text-decoration: underline;
+        color: $stroke;
+        font-size: rem($mammoth);
+      }
+      h3 {
+        margin-bottom: $mini;
+      }
+    }
+    @include respond-to(laptop) {
+      .process {
+        margin: $medium 0;
+      }
+    }
+  }
+  /* Event Date & Venue */
+  
+  .date-venue-1 {
+    .date-venue-card {
+      padding: $large $small;
+      @extend %card;
+      @include respond-to(laptop) {
+        max-width: 400px;
+        margin: 0 auto $medium;
+      }
+    }
+    .venue {
+      margin-bottom: $large;
+    }
+    .date {
+      padding: $micro / 2;
+      color: $light-2;
+      background: $dark-2;
+    }
+  }
+  /* Date & Venue Event - with map */
+  
+  .date-venue-2 {
+    #map {
+      width: 80%;
+      height: 560px;
+      margin: 0 auto;
+    }
+    .date-venue-card {
+      width: 80%;
+      margin: 0 auto;
+      padding: $mammoth $small;
+    }
+    .venue {
+      margin-bottom: $large;
+    }
+    .date {
+      padding: $micro / 2;
+      background: $dark-2;
+      color: $light-2;
+    }
+  }
+  /* Date & Venue Event - with map (Dark Theme) */
+  
+  .date-venue-3 {
+    @extend .date-venue-2;
+    .date {
+      background: $set2-accent-1;
+      color: $light-2;
+    }
+  }
+  /* Ebook Chapters */
+  
+  .ebook-chapters {
+    .feature-list {
+      li {
+        display: inline-block;
+        margin: 0 $medium $medium;
+        a {
+          color: $set4-accent-1;
+          font-size: rem($medium);
+          @include transition(all $base-duration $base-timing);
+          &:active,
+          &:focus,
+          &:hover {
+            color: $dark-2;
+          }
+        }
+      }
+    }
+    .chapter {
+      padding: $medium $micro;
+      border-top: 1px solid $stroke;
+      border-bottom: 1px solid $stroke;
+      h4 {
+        margin-bottom: $mini;
+      }
+    }
+  }
+  /* Elearn  Courses 1 */
+  
+  .courses-1 {
+    .popular-courses {
+      margin-bottom: $huge;
+    }
+    .latest-courses,
+    .popular-courses {
+      margin-bottom: $small;
+      text-align: left;
+      .course-headline {
+        margin-bottom: $small;
+        .seperator {
+          margin-left: 0;
+          background: $stroke;
+        }
+      }
+      @include respond-to(laptop) {
+        text-align: center;
+        .course-headline {
+          .seperator {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+    .course-card {
+      border-radius: $micro/4;
+      @extend %card;
+      .course-info {
+        padding: $mini $micro;
+        .course-title {
+          margin-bottom: $small;
+          h4 {
+            text-transform: capitalize;
+            line-height: 1.5;
+          }
+        }
+        .course-description {
+          margin-bottom: $micro;
+        }
+        .duration {
+          color: $set4-accent-1;
+        }
+      }
+      @include respond-to(laptop) {
+        max-width: 400px;
+        margin: 0 auto $medium;
+      }
+    }
+    .course-cta {
+      text-align: center;
+      a {
+        margin-top: $medium;
+      }
+    }
+  }
+  /* Elearn Courses 2 */
+  
+  .courses-2 {
+    .course-card {
+      margin: 0 $mini/2 $mini;
+      text-align: left;
+      border-radius: $micro/4;
+      @extend %card;
+      .course-info {
+        padding: $mini $micro;
+        .course-title {
+          margin-bottom: $small;
+          h4 {
+            text-transform: capitalize;
+            line-height: 1.5;
+          }
+        }
+        .course-description {
+          margin-bottom: $micro;
+        }
+        .duration {
+          color: $set4-accent-1;
+        }
+      }
+    }
+  }
+  /* Travel Tours 1 */
+  
+  .travel-tours-1 {
+    .first-row {
+      margin-bottom: $medium;
+    }
+    .tour-card {
+      @extend %card;
+      border-radius: $micro / 4;
+      .tour-info {
+        padding: $mini $micro;
+        text-align: left;
+        .tour-place {
+          margin-bottom: $micro;
+        }
+        .tour-description {
+          margin-bottom: $small;
+        }
+        .tour-price {
+          span {
+            font-size: 1rem;
+            color: $dark-1;
+            font-family: $base-font-family;
+          }
+        }
+      }
+    }
+    @include respond-to(laptop) {
+      .first-row {
+        margin-bottom: 0;
+      }
+      .tour-card {
+        max-width: 420px;
+        margin: 0 auto $medium;
+      }
+    }
+  }
+  /* Travel Tours 2 */
+  
+  .travel-tours-2 {
+    .tour-card {
+      margin: 0 $mini/2 $mini;
+      text-align: left;
+      border-radius: $micro/4;
+      @extend %card;
+      .tour-info {
+        padding: $mini $micro;
+        .tour-place {
+          margin-bottom: $small;
+        }
+        .tour-description {
+          margin-bottom: $micro;
+        }
+        .tour-price {
+          span {
+            font-size: 1rem;
+            color: $dark-1;
+            font-family: $base-font-family;
+          }
+        }
+      }
+    }
+  }
+  /* Event Countdown */
+  
+  .countdown-1 {
+    .countdown-card {
+      @extend %card;
+      padding: $medium;
+    }
+    .headline {
+      margin-bottom: $micro;
+    }
+    #countdown {
+      font-size: rem(40);
+      color: $dark-2;
+      font-family: $heading-font-family;
+    }
+  }
+  /*Music Show Countdown*/
+  
+  .countdown-2 {
+    .countdown-card {
+      @extend %card;
+      padding: $medium;
+    }
+    #countdown {
+      font-size: rem(40);
+      color: $dark-2;
+      font-family: $heading-font-family;
+    }
+  }
+  /* Properties 1 - Real Estate 1 */
+  
+  .properties-listed-1 {
+    .row-first {
+      margin-bottom: $small;
+    }
+    .property-card {
+      @extend %card;
+      text-align: left;
+      .property-details {
+        padding: $mini 0;
+      }
+      .title-price {
+        padding: 0 $micro;
+        margin-bottom: $micro;
+        @include clearfix;
+        h4 {
+          margin-bottom: $micro;
+        }
+        .price {
+          float: left;
+          color: $set1-accent-1;
+        }
+        .badge-rent-sale {
+          padding: $micro/4;
+          float: right;
+          background: $dark-2;
+          color: $light-2;
+          line-height: 1;
+          text-align: right;
+          text-transform: uppercase;
+        }
+      }
+      .description {
+        padding: 0 $micro;
+      }
+    }
+    @include respond-to(laptop) {
+      .row-first {
+        margin-bottom: 0;
+      }
+      .property-card {
+        max-width: 400px;
+        margin: 0 auto $medium;
+      }
+    }
+  }
+  /*Properties 2 - Real Estate 2*/
+  
+  .properties-listed-2 {
+    .property-card {
+      margin: 0 $mini/2 $mini;
+      text-align: left;
+      border-radius: $micro/4;
+      @extend %card;
+      .property-details {
+        padding: $mini 0;
+      }
+      .title-price {
+        padding: 0 $micro;
+        margin-bottom: $micro;
+        @include clearfix;
+        h4 {
+          margin-bottom: $micro;
+        }
+        .price {
+          float: left;
+          color: $set1-accent-1;
+        }
+        .badge-rent-sale {
+          padding: $micro/4;
+          float: right;
+          background: $dark-2;
+          color: $light-2;
+          line-height: 1;
+          text-align: right;
+          text-transform: uppercase;
+        }
+      }
+      .description {
+        padding: 0 $micro;
+      }
+    }
+  }
+  /**
+ *
+ * Schedules Section
+ *
+ */
+  /* Schedule 1 */
+  
+  .schedule-1 {
+    .schedule-card {
+      margin-bottom: $medium;
+      @extend %card;
+      .date {
+        padding: $mini 0;
+        background: $dark-2;
+        h4 {
+          color: $light-2;
+        }
+      }
+      .card-body {
+        padding: $medium 0;
+        .talk {
+          padding: $mini;
+          border-bottom: 1px solid $stroke;
+          .time {
+            color: $dark-2;
+            margin-bottom: $micro/2;
+          }
+          .topic {
+            margin-bottom: $micro;
+          }
+          .speaker {
+            color: $set2-accent-1;
+          }
+          &:last-of-type {
+            border-bottom: none;
+          }
+        }
+      }
+      @include respond-to(laptop) {
+        max-width: 400px;
+        margin: 0 auto $medium;
+      }
+    }
+  }
+  /* Schedule 2 */
+  
+  .schedule-2,
+  .schedule-3 {
+    .timeline {
+      .date {
+        padding: $micro/2;
+        background: $dark-2;
+        margin: 0 auto $medium;
+        width: 40%;
+        h4 {
+          color: $light-2;
+        }
+        @include respond-to(phone) {
+          width: 90%;
+        }
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style-type: none;
+          position: relative;
+          width: 2px;
+          margin: 0 auto;
+          padding-top: 50px;
+          background: $stroke;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: $mini;
+            height: $mini;
+            border-radius: 50%;
+            background: inherit;
+          }
+          div {
+            @extend %card;
+            @include clearfix();
+            position: relative;
+            bottom: 0;
+            width: 400px;
+            padding: 15px;
+            text-align: left;
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: 5px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+            }
+            img {
+              width: $large;
+              height: $large;
+              float: left;
+              border-radius: 50%;
+              margin-right: $micro;
+            }
+            .time {
+              font-size: rem($micro);
+              font-weight: 400;
+              color: $dark-2;
+            }
+          }
+          &:nth-child(odd) {
+            div {
+              left: $medium + 2;
+              &::before {
+                left: -$micro;
+                border-width: 8px 16px 8px 0;
+                border-color: transparent $light-2 transparent transparent;
+              }
+            }
+          }
+          &:nth-child(even) {
+            div {
+              left: -450px; //400 + $medium + 2
+              &::before {
+                right: -15px;
+                border-width: 8px 0 8px 16px;
+                border-color: transparent transparent transparent $light-2;
+              }
+            }
+          }
+        }
+      }
+      @include respond-to(laptop) {
+        ul li {
+          div {
+            width: 300px;
+          }
+          &:nth-child(even) div {
+            left: -350px;
+          }
+        }
+      }
+      @include respond-to(tablet) {
+        ul li {
+          margin-left: $mini + ($small/2);
+          &:after {
+            width: $mini;
+            height: $mini;
+          }
+          div {
+            width: calc(100vw - 132px);
+          }
+          &:nth-child(odd) div {
+            left: $medium;
+          }
+          &:nth-child(even) div {
+            left: $medium;
+          }
+          &:nth-child(even) div::before {
+            left: - $micro;
+            border-width: $micro/2 $micro $micro/2 0;
+            border-color: transparent $light-2 transparent transparent;
+          }
+        }
+      }
+      @include respond-to(phone) {
+        ul li div {
+          width: calc(100vw - 148px);
+        }
+      }
+    }
+  }
+  /* Schedule 3 */
+  
+  .schedule-3 {
+    .event-list {
+      margin-bottom: $large;
+      li {
+        display: inline-block;
+        margin-right: $small;
+        i {
+          font-size: rem($medium);
+          color: $dark-2;
+          margin-bottom: $micro / 2;
+        }
+        a:active,
+        a:focus,
+        a:hover {
+          @include transition(all $base-duration $base-timing);
+          i {
+            color: $set2-accent-1;
+          }
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+      @include respond-to(phone) {
+        li {
+          margin-right: $micro;
+          i {
+            font-size: rem($small);
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+      @include respond-to(sphone) {
+        li {
+          margin-right: $micro / 2;
+        }
+      }
+    }
+    .event-card {
+      @extend %card;
+    }
+  }
+  /* Schedule 4 */
+  
+  .schedule-4 {
+    @extend .schedule-3;
+    .section-heading {
+      h2 {
+        color: $light-2;
+      }
+      .seperator {
+        background: $light-2;
+      }
+    }
+    .timeline {
+      .date {
+        background: $light-2;
+        h4 {
+          color: $dark-2;
+        }
+      }
+    }
+    .event-list {
+      li {
+        i {
+          color: $light-2;
+        }
+        h5 {
+          color: $light-2;
+        }
+        a:active,
+        a:focus,
+        a:hover {
+          i {
+            color: $set2-accent-1;
+          }
+        }
+      }
+    }
+  }

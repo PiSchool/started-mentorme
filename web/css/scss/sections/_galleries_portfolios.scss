@@ -1,0 +1,339 @@
+/**
+ *
+ * General Gallery, Portfolio Sections
+ *
+ */
+
+.gallery,
+.portfolio,
+.portfolio-masonry {
+  a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    .view-more {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      opacity: 0;
+      color: $dark-2;
+      background: rgba($light-2, 0.7);
+      @include transition(all $base-duration $base-timing);
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: auto;
+        transform: translate(-50%, -50%);
+        font-size: rem($medium);
+      }
+    }
+    &:hover .view-more {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+.portfolio .portfolio-item,
+.portfolio-masonry {
+  a {
+    .view-more {
+      background: rgba($light-2, 0.7);
+      @include transition(all $base-duration $base-timing);
+    }
+  }
+}
+
+
+/**
+ *
+ * Custom Gallery Styles
+ *
+ */
+
+
+/* Gallery 1 */
+
+.gallery-1,
+.gallery-5 {
+  .gallery {
+    a {
+      margin-bottom: $small;
+    }
+  }
+}
+
+
+/* Gallery 2 */
+
+.gallery-2 {
+  @include clearfix;
+  .gallery {
+    width: 100%;
+    a {
+      float: left;
+      width: 33.33%;
+      @include respond-to(tablet) {
+        width: 50%;
+      }
+      @include respond-to(phone) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+/* Gallery 3 */
+
+.gallery-3 {
+  @include clearfix;
+  padding-bottom: 0;
+  .gallery {
+    width: 100%;
+    a {
+      float: left;
+      width: 25%;
+      .view-more {
+        background: rgba($light-2, 0.7);
+      }
+      @include respond-to(tablet) {
+        width: 50%;
+      }
+      @include respond-to(phone) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+/* Gallery 4 */
+
+.gallery-4 {
+  @include clearfix;
+  padding-bottom: 0;
+  a {
+    float: left;
+    width: 20%;
+    @include respond-to(laptop) {
+      width: 50%;
+    }
+    @include respond-to(phone) {
+      width: 100%;
+    }
+  }
+}
+
+
+/* Portfolio 1 & 2 -  Agency 1 & Agency 2 */
+
+.portfolio-1,
+.portfolio-2 {
+  .work-content {
+    margin-bottom: $medium;
+  }
+  .work-links {
+    margin-bottom: $medium;
+    ul {
+      .active {
+        text-decoration: line-through;
+      }
+      li {
+        display: inline-block;
+        margin-right: $mini;
+        padding: $micro/2;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: $dark-2;
+        @include transition(all $base-duration $base-timing);
+        &:hover {
+          text-decoration: line-through;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+        @include respond-to(tablet) {
+          margin-right: $micro / 2;
+          padding: $micro / 2 0;
+        }
+      }
+    }
+  }
+  .portfolio {
+    width: 100%;
+    @include clearfix;
+    .portfolio-item {
+      float: left;
+      width: 25%;
+      a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        &:hover .view-more {
+          display: block;
+          opacity: 1;
+        }
+      }
+      @include respond-to(laptop) {
+        width: 33.33%;
+      }
+      @include respond-to(tablet) {
+        width: 50%;
+      }
+      @include respond-to(phone) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.portfolio-2 {
+  padding-bottom: 0;
+}
+
+
+/* Portfolio 3 & 5 - Masonry Agency 3, Freelance 2 */
+
+.portfolio-3,
+.portfolio-5 {
+  .work-content {
+    margin-bottom: $medium;
+  }
+  .portfolio-masonry {
+    width: 100%;
+    @include clearfix;
+    .portfolio-item {
+      float: left;
+      a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        &:hover .view-more {
+          display: block;
+          opacity: 1;
+        }
+      }
+    }
+    .grid-sizer,
+    .portfolio-item {
+      width: 25%;
+      height: auto;
+    }
+    .portfolio-item-double {
+      width: 50%;
+      height: auto;
+      img {
+        width: 100%;
+      }
+    }
+    @include respond-to(tablet) {
+      .grid-sizer,
+      .portfolio-item {
+        width: 50%;
+      }
+      .portfolio-item-double {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+/* Portfolio 4 -  Freelance 1 */
+
+.portfolio-4 {
+  .work-content {
+    margin-bottom: $medium;
+  }
+  .work-links {
+    margin-bottom: $medium;
+    ul {
+      .active {
+        text-decoration: line-through;
+      }
+      li {
+        display: inline-block;
+        margin-right: $mini;
+        padding: $micro/2;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: $dark-2;
+        @include transition(all $base-duration $base-timing);
+        &:hover {
+          text-decoration: line-through;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+        @include respond-to(tablet) {
+          margin-right: $micro / 2;
+          padding: $micro / 2 0;
+        }
+      }
+    }
+  }
+  .portfolio {
+    width: 100%;
+    @include clearfix;
+    .portfolio-item {
+      float: left;
+      width: 33.33%;
+      a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        &:hover .view-more {
+          display: block;
+          opacity: 1;
+        }
+      }
+      @include respond-to(tablet) {
+        width: 50%;
+      }
+      @include respond-to(phone) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.portfolio-5 {
+  padding-bottom: 0;
+}
+
+
+/*----------- Screenshot Carousel Style -----------*/
+
+
+/* ScreenShots 1 */
+
+.screenshots-1 {
+  .screenshot-carousel {
+    text-align: center;
+    .screenshot {
+      display: block;
+      padding: $micro/2;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

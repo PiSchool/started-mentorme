@@ -1,0 +1,40 @@
+{
+  "name": "arpa-landing-page-pack",
+  "version": "1.0.0",
+  "description": "All purpose landing page bundle",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://paperboat-designs@bitbucket.org/paperboat-designs/arpa-landing-page-bundle.git"
+  },
+  "keywords": [
+    "Landing",
+    "Page",
+    "App",
+    "Product",
+    "Web",
+    "Service",
+    "Restaurent",
+    "Sass",
+    "Gulp"
+  ],
+  "author": "Pankaj Chakraborty <author@paperboatdesigns.co>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/paperboat-designs/arpa-landing-page-bundle#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4"
+  }
+}

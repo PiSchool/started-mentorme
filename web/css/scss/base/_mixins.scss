@@ -1,0 +1,65 @@
+//////////////////
+// Custom Mixins
+//////////////////
+//Buton Solid
+@mixin btn-solid ($color) {
+  color: $light-2;
+  background-color: $color;
+  &:active,
+  &:focus,
+  &:hover {
+    color: $light-2;
+    background-color: lighten($color, 5%);
+  }
+}
+
+//Button Ghost
+@mixin btn-ghost($color) {
+  color: $color;
+  border: 2px solid $color;
+  background: transparent;
+  &:active,
+  &:focus,
+  &:hover {
+    color: $light-2;
+    background-color: $color;
+  }
+}
+
+//Button Solid Navigation
+@mixin btn-nav-solid($color) {
+  display: inline-block;
+  padding: 6px 32px;
+  margin-left: $micro;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $light-2;
+  border-radius: $micro/4;
+  background: $color;
+  box-shadow: none;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: 400;
+  @include transition(all $base-duration $base-timing);
+}
+
+//Button Ghost Navigation
+@mixin btn-nav-ghost($color) {
+  display: inline-block;
+  padding: 4px 32xp;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $color;
+  border-radius: $micro/4;
+  border: 2px solid $color;
+  background: transparent;
+  box-shadow: none;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: 400;
+  @include transition(all $base-duration $base-timing);
+}

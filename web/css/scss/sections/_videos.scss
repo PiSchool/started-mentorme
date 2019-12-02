@@ -1,0 +1,172 @@
+  /**
+ *
+ * Video Sections
+ *
+ */
+  /* Video 1 */
+  
+  .video-1 {
+    padding: 0;
+    background: url('../img/bg-app-video.jpg') no-repeat center bottom fixed;
+    @include prefixer(background-size,
+    cover,
+    webkit moz o spec);
+    .color-overlay {
+      padding: $mega*2 0;
+      .section-heading {
+        h2 {
+          color: $light-2;
+        }
+        .seperator {
+          background: $light-2;
+        }
+      }
+      p {
+        margin-bottom: $medium;
+        color: $light-1;
+      }
+      .button-video {
+        img {
+          width: $mega;
+        }
+      }
+    }
+  }
+  /* Video 2 */
+  
+  .video-2 {
+    .feature-text {
+      text-align: left;
+      .section-heading {
+        .seperator {
+          margin-left: 0;
+        }
+      }
+    }
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+    embed,
+    iframe,
+    object {
+      border: none;
+      max-width: 100%;
+    }
+    @include respond-to(laptop) {
+      .feature-text {
+        text-align: center;
+        margin-bottom: $medium;
+        .section-heading {
+          h2 {
+            text-align: center;
+          }
+          .seperator {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+  /* Video 3 */
+  
+  .video-3 {
+    padding: 0;
+    .pattern-overlay {
+      padding: $mega*2 0;
+    }
+    .section-heading {
+      h2 {
+        color: $light-2;
+      }
+      .seperator {
+        background: $light-2;
+      }
+    }
+    p {
+      margin-bottom: $medium;
+      color: $light-1;
+    }
+    .button-video {
+      img {
+        width: $mega;
+      }
+    }
+  }
+  /* Video 4 */
+  
+  .video-4 {
+    @extend .video-2;
+    .content {
+      margin-bottom: $medium;
+    }
+  }
+  /* Video 5 */
+  
+  .video-5 {
+    padding: 0;
+    background: url('../img/bg-travel.jpg') no-repeat center bottom fixed;
+    @include prefixer(background-size,
+    cover,
+    webkit moz o spec);
+    .color-overlay {
+      padding: $mega * 2 0;
+    }
+    .section-heading {
+      h2 {
+        color: $light-2;
+        line-height: 1.5;
+      }
+      .seperator {
+        background: $light-2;
+      }
+    }
+    .button-video {
+      img {
+        width: $mammoth;
+      }
+    }
+  }
+  /* Video Section - Elearn About */
+  
+  .video-6 {
+    @extend .video-2;
+    @include respond-to(laptop) {
+      .feature-text {
+        text-align: center;
+        .section-heading {
+          h2 {
+            text-align: center;
+          }
+          .seperator {
+            margin-left: auto;
+          }
+        }
+      }
+      .videoWrapper {
+        margin-bottom: $medium;
+      }
+    }
+  }
+  /* Video 7 */
+  
+  .video-7 {
+    padding: 0;
+    .color-overlay {
+      padding: $mega * 2 0;
+    }
+    .section-heading {
+      h2 {
+        color: $light-2;
+        line-height: 1.5;
+      }
+      .seperator {
+        background: $light-2;
+      }
+    }
+    .button-video {
+      img {
+        width: $mammoth;
+      }
+    }
+  }

@@ -1,0 +1,162 @@
+/**
+ *
+ * Button Styles
+ *
+ */
+
+
+/* Global button styles */
+
+.button-primary {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: $micro/4;
+  box-shadow: none;
+  font-family: $base-font-family;
+  @include transition(all $base-duration $base-timing);
+}
+
+
+/* Button Sizes */
+
+.button-normal-solid {
+  padding: $micro+2px $small+2px;
+}
+
+.button-normal-ghost {
+  padding: $micro $small;
+}
+
+.button-small-solid {
+  padding: ($micro/2)+2px $small+2px;
+}
+
+.button-small-ghost {
+  padding: $micro/2 $small;
+}
+
+.button-large-solid {
+  padding: $small+2px $medium+2px;
+}
+
+.button-large-ghost {
+  padding: $small $medium;
+}
+
+
+/* Circle Buttons */
+
+.button-circle-set-3 {
+  display: inline-block;
+  text-align: center;
+  color: $light-1;
+  border-radius: 100%;
+  background: $set3-accent-1;
+  font-size: $small;
+  line-height: $large;
+  width: $large;
+  height: $large;
+  &:active,
+  &:focus,
+  &:hover {
+    color: $light-2;
+    background-color: lighten($set3-accent-1, 5%);
+  }
+}
+
+// For additional detailed button styles check base/_mixins.scss
+
+/* Solid Buttons */
+
+.button-dark-solid {
+  @include btn-solid($dark-2);
+}
+
+.button-set-1-solid {
+  @include btn-solid($set1-accent-1);
+}
+
+.button-set-2-solid {
+  @include btn-solid($set2-accent-1);
+}
+
+.button-set-3-solid {
+  @include btn-solid($set3-accent-1);
+}
+
+.button-set-4-solid {
+  @include btn-solid($set4-accent-1);
+}
+
+
+/* Ghost Button Styles */
+
+.button-dark-ghost {
+  @include btn-ghost($dark-2);
+}
+
+.button-set-1-ghost {
+  @include btn-ghost($set1-accent-1);
+}
+
+.button-set-2-ghost {
+  @include btn-ghost($set2-accent-1);
+}
+
+.button-set-3-ghost {
+  @include btn-ghost($set3-accent-1);
+}
+
+.button-set-4-ghost {
+  @include btn-ghost($set4-accent-1);
+}
+
+
+/* Navigation Buttons Solid */
+
+.button-nav-dark-solid {
+  @include btn-nav-solid($dark-2);
+}
+
+.button-nav-set-1-solid {
+  @include btn-nav-solid($set1-accent-1);
+}
+
+.button-nav-set-2-solid {
+  @include btn-nav-solid($set2-accent-1);
+}
+
+.button-nav-set-3-solid {
+  @include btn-nav-solid($set3-accent-1);
+}
+
+.button-nav-set-4-solid {
+  @include btn-nav-solid($set4-accent-1);
+}
+
+
+/* Navigation Buttons Ghost */
+
+.button-nav-dark-ghost {
+  @include btn-nav-ghost($dark-2);
+}
+
+.button-nav-set-1-ghost {
+  @include btn-nav-ghost($set1-accent-1);
+}
+
+.button-nav-set-2-ghost {
+  @include btn-nav-ghost($set2-accent-1);
+}
+
+.button-nav-set-3-ghost {
+  @include btn-nav-ghost($set3-accent-1);
+}
+
+.button-nav-set-4-ghost {
+  @include btn-nav-ghost($set4-accent-1);
+}

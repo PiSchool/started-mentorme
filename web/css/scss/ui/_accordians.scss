@@ -1,0 +1,121 @@
+/**
+ *
+ * Accordian Styles
+ *
+ */
+
+
+/* Simple accordian with border */
+
+.accordian {
+  @include respond-to(tablet) {
+    width: 90%;
+    margin: 0 auto;
+  }
+   :last-child {
+    margin-bottom: 0;
+  }
+  .panel {
+    margin: 0 0 $micro;
+    border: 1px solid $stroke;
+    border-radius: $micro/4;
+    background: $light-1;
+    box-shadow: none;
+    a.panel-heading {
+      position: relative;
+      display: block;
+      padding: $micro $mini;
+      text-align: left;
+      &:after {
+        position: absolute;
+        top: $mini;
+        right: $mini;
+        display: block;
+        width: $micro/2;
+        height: $micro/2;
+        content: "";
+        border-top: 1px solid $dark-2;
+        border-left: 1px solid $dark-2;
+        @include transform(rotate(45deg));
+      }
+      &.collapsed:after {
+        top: $mini - 4;
+        border: none;
+        border-right: 1px solid $dark-2;
+        border-bottom: 1px solid $dark-2;
+      }
+      @include respond-to(tablet) {
+        padding: $micro;
+        &.collapsed:after,
+        &:after {
+          display: none;
+        }
+        h6 {
+          line-height: 1.5;
+        }
+      }
+    }
+    .panel-body {
+      padding: $mini;
+      text-align: left;
+      border-top: 1px solid $stroke;
+    }
+  }
+}
+
+
+/* Accordian - Card UI */
+
+.accordian-card {
+  @include respond-to(tablet) {
+    width: 90%;
+    margin: 0 auto;
+  }
+   :last-child {
+    margin-bottom: 0;
+  }
+  .panel {
+    @extend %card;
+    border-radius: $micro/4;
+    margin: 0 0 $micro;
+    a.panel-heading {
+      display: block;
+      position: relative;
+      padding: $micro $mini;
+      text-align: left;
+      &:after {
+        position: absolute;
+        top: $mini;
+        right: $mini;
+        display: block;
+        width: $micro/2;
+        height: $micro/2;
+        content: "";
+        border-top: 1px solid $dark-2;
+        border-left: 1px solid $dark-2;
+        @include transform(rotate(45deg));
+      }
+      &.collapsed:after {
+        top: $mini - 4;
+        border: none;
+        border-right: 1px solid $dark-2;
+        border-bottom: 1px solid $dark-2;
+      }
+      @include respond-to(tablet) {
+        padding: $micro;
+        &.collapsed:after,
+        &:after {
+          display: none;
+        }
+        h6 {
+          line-height: 1.5;
+        }
+      }
+    }
+    .panel-body {
+      border-top: 1px solid $stroke;
+      padding: $mini;
+      text-align: left;
+    }
+  }
+}

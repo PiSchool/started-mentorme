@@ -1,0 +1,29 @@
+/**
+ *
+ * Global Carousel Styles
+ *
+ */
+
+.owl-theme .owl-controls .owl-page span {
+  background: $stroke;
+  width: $micro/2;
+  height: $micro/2;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: $dark-1;
+}
+
+.grabbing {
+  cursor: url("../img/grabbing.png") 8 8, move;
+}
+
+.owl-item.loading {
+  min-height: 150px;
+  background: url("../img/AjaxLoader.gif") no-repeat center center;
+}
+
+.owl-carousel .owl-item img {
+  display: inline;
+}

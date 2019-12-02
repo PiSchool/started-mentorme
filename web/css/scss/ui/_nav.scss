@@ -1,0 +1,336 @@
+/**
+ *
+ * Navigation Styles
+ *
+ */
+
+
+/*----------  Navigation Global Styles  ----------*/
+
+.arpa-navigation,
+.arpa-navigation-center,
+.arpa-navigation-info {
+  padding: 0;
+}
+
+
+/* Navigation Light */
+
+.nav-light {
+  margin-bottom: 0;
+  padding: $micro/2 0;
+  background: $light-2;
+  @include transition(all $base-duration $base-timing);
+  .navbar-brand {
+    img {
+      width: auto;
+      max-height: $mini;
+    }
+  }
+  .arpa-nav {
+    a {
+      color: $dark-1;
+      font-size: $base-font-size;
+      @include transition(all $base-duration $base-timing);
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+        background: transparent;
+      }
+    }
+  }
+  .navbar-toggle {
+    background: $dark-2;
+    i {
+      color: $light-2;
+    }
+  }
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+  .navbar-btn {
+    margin-left: $micro;
+    padding: $micro/2 $mini;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $light-2;
+    border: none;
+    background: $dark-2;
+    box-shadow: none;
+    font-family: $base-font-family;
+    font-weight: 400;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      color: $light-2;
+      background: lighten($dark-2, 10%);
+    }
+    @include respond-to(laptop) {
+      margin-left: 0;
+    }
+  }
+}
+
+
+/* Navigation Dark */
+
+.nav-dark {
+  margin-bottom: 0;
+  padding: $micro/2 0;
+  background: $dark-2;
+  @include transition(all $base-duration $base-timing);
+  @include respond-to(tablet) {
+    background: $dark-2;
+  }
+  .navbar-brand {
+    img {
+      width: auto;
+      max-height: $mini;
+    }
+  }
+  .arpa-nav {
+    a {
+      padding-top: $micro;
+      color: $light-1;
+      @include transition(all $base-duration $base-timing);
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+        background: transparent;
+      }
+    }
+  }
+  .navbar-toggle {
+    background: $light-2;
+    i {
+      color: $dark-2;
+    }
+  }
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+  .navbar-btn {
+    margin-left: $micro;
+    padding: $micro/2 $mini;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $dark-2;
+    border: none;
+    background: $light-2;
+    box-shadow: none;
+    font-family: $base-font-family;
+    font-weight: 400;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      color: $dark-2;
+      background: darken($light-2, 5%);
+    }
+    @include respond-to(laptop) {
+      margin-left: 0;
+    }
+  }
+}
+
+
+/* Navigation Transparent */
+
+.nav-transparent {
+  margin-bottom: 0;
+  padding: $micro/2 0;
+  background: transparent;
+  @include transition(all $base-duration $base-timing);
+  @include respond-to(tablet) {
+    background: $dark-2;
+  }
+  .navbar-brand {
+    img {
+      width: auto;
+      max-height: $mini;
+    }
+  }
+  .arpa-nav {
+    a {
+      padding-top: $micro;
+      color: $light-1;
+      @include transition(all $base-duration $base-timing);
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+        background: transparent;
+      }
+    }
+  }
+  .navbar-toggle {
+    background: $light-2;
+    i {
+      color: $dark-2;
+    }
+  }
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+  .navbar-btn {
+    margin-left: $micro;
+    padding: $micro/2 $mini;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $dark-2;
+    border: none;
+    background: $light-2;
+    box-shadow: none;
+    font-family: $base-font-family;
+    font-weight: 400;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      color: $dark-2;
+      background: darken($light-2, 5%);
+    }
+    @include respond-to(laptop) {
+      margin-left: 0;
+    }
+  }
+}
+
+
+/* Navigation dark Scrolled */
+
+.nav-dark-scrolled {
+  padding: $micro/4 0;
+  background: $dark-2;
+  @include transition(all $base-duration $base-timing);
+}
+
+
+/* Navigation light Scrolled */
+
+.nav-light-scrolled {
+  padding: $micro/4 0;
+  @include transition(all $base-duration 350ms);
+  @include prefixer(box-shadow, 0 0 16px 0 rgba( $dark-1, 0.16), webkit moz spec);
+}
+
+
+/*----------- Navigation - Logo Centered -----------*/
+
+.arpa-navigation-center {
+  @include clearfix;
+  .logo {
+    @include clearfix;
+    margin: $micro auto;
+    @include respond-to(laptop) {
+      margin: 0 auto;
+      .logo-img {
+        display: block;
+        float: left;
+        margin-top: $micro;
+        margin-left: 15px;
+      }
+    }
+  }
+  .navbar-nav {
+    float: none;
+    li {
+      display: inline-block;
+      float: none;
+      @include respond-to(laptop) {
+        display: block;
+      }
+    }
+  }
+}
+
+
+/*----------- Navigation with Organizational Information -----------*/
+
+.arpa-navigation-info {
+  .info-bar {
+    @include clearfix;
+    padding: $micro/2 0;
+    border-bottom: 1px solid $stroke;
+  }
+  .info-bar-phone {
+    float: left;
+    text-align: left;
+  }
+  .info-bar-social {
+    float: right;
+    text-align: right;
+    .social-links-bar {
+      li {
+        display: inline-block;
+        margin: 0 $micro;
+      }
+    }
+  }
+  @include respond-to(tablet) {
+    .info-bar-phone {
+      float: none;
+      text-align: center;
+      margin-bottom: $micro;
+    }
+    .info-bar-social {
+      float: none;
+      text-align: center;
+    }
+  }
+}
+
+// info-bar-light
+.info-bar-light {
+  .info-bar-phone {
+    a {
+      color: $dark-1;
+      @include transition(all $base-duration $base-timing);
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .social-links-bar {
+    a {
+      color: $dark-1;
+    }
+  }
+}
+
+// info-bar-dark
+.info-bar-dark {
+  .info-bar-phone {
+    a {
+      color: $light-1;
+      @include transition(all $base-duration $base-timing);
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .social-links-bar {
+    a {
+      color: $light-1;
+    }
+  }
+}

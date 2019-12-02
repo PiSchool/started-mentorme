@@ -1,0 +1,117 @@
+/**
+ *
+ * Number Counter
+ *
+ */
+
+
+/* Numbers 1 */
+
+.numbers-1 {
+  i {
+    margin-bottom: $small;
+    color: $set3-accent-1;
+    font-size: rem($medium);
+  }
+  h2 {
+    margin-bottom: $micro;
+    line-height: 1;
+  }
+  @include respond-to(laptop) {
+    .number-unit {
+      margin: $medium 0;
+    }
+  }
+}
+
+
+/* Numbers 2 */
+
+.numbers-2 {
+  padding: 0;
+  background: url('../img/bg-header-app.jpg') no-repeat center center;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .color-overlay {
+    i {
+      margin-bottom: $small;
+      color: $light-1;
+      font-size: rem($medium);
+    }
+    h2 {
+      margin-bottom: $micro;
+      color: $light-2;
+      line-height: 1;
+    }
+    p {
+      color: $light-1;
+    }
+  }
+  @include respond-to(laptop) {
+    .number-unit {
+      margin: $medium 0;
+    }
+  }
+}
+
+
+/* Numbers 3 */
+
+.numbers-3 {
+  i {
+    margin-bottom: $small;
+    color: $light-2;
+    font-size: rem($medium);
+  }
+  h2 {
+    margin-bottom: $micro;
+    line-height: 1;
+  }
+  @include respond-to(laptop) {
+    .number-unit {
+      margin: $medium 0;
+    }
+  }
+}
+
+
+/* Numbers 4 */
+
+.numbers-4 {
+  h2 {
+    margin-bottom: $micro;
+  }
+  @include respond-to(laptop) {
+    .number-unit {
+      margin: $medium 0;
+    }
+  }
+}
+
+
+/* Numbers 5 */
+
+.numbers-5 {
+  @extend .numbers-3;
+  i {
+    color: $dark-2;
+  }
+}
+
+/* Numbers 6 */
+
+.numbers-6 {
+  @extend .numbers-3;
+  i {
+    color: $dark-2;
+  }
+}
+
+/* Numbers 7 */
+.numbers-7 {
+  @extend .numbers-1;
+  i {
+    color: $light-2;
+  }
+}

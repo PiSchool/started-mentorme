@@ -1,0 +1,70 @@
+///////////////////////
+// Custom Placeholders
+//////////////////////
+//container border
+%container-border {
+  padding: 0;
+  .container {
+    padding: $mega 0;
+    border-bottom: 1px solid $stroke;
+  }
+}
+
+///////////
+// Card UI
+//////////
+//General Card
+%card {
+  border-radius: $micro / 4;
+  background-color: $light-2;
+  @include prefixer(box-shadow, 0 0 16px 0 rgba( $dark-1, 0.16), webkit moz spec);
+}
+
+%card-dark {
+  border-radius: $micro / 4;
+  background-color: $dark-1;
+  @include prefixer(box-shadow, 0 0 16px 0 rgba( $dark-1, 0.16), webkit moz spec);
+}
+
+//Coming Soon Card
+%coming-soon-card {
+  padding: $large $medium;
+  @extend %card;
+  .icon-big {
+    margin-bottom: $micro;
+    color: $set1-accent-1;
+    font-size: rem(60);
+  }
+  .featured-img {
+    margin: 0 auto;
+  }
+  .content-column {
+    margin-top: $medium;
+  }
+  h3 {
+    margin-bottom: $micro;
+    text-transform: capitalize;
+  }
+  p {
+    margin-bottom: $mini;
+  }
+  .seperator {
+    margin-bottom: $medium;
+  }
+  .subscription {
+    margin-bottom: $medium;
+  }
+  .social-icons {
+    margin-bottom: $mini;
+    ul {
+      li {
+        display: inline-block;
+        margin-right: $micro;
+        a {
+          color: $dark-2;
+          font-size: rem($micro);
+        }
+      }
+    }
+  }
+}

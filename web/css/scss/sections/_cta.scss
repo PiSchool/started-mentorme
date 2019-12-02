@@ -1,0 +1,380 @@
+/**
+ *
+ * Call to Action Sections
+ *
+ */
+
+
+/* Download 1 */
+
+.download-1 {
+  padding: 0;
+  background: url('../img/bg-download-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .color-overlay {
+    padding: $giant 0;
+  }
+  .download-buttons {
+    padding-top: $mammoth * 2;
+    a {
+      margin-right: $micro;
+      img {
+        max-width: 200px;
+        height: auto;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .download-buttons {
+      padding-top: 0;
+      margin-bottom: $medium;
+    }
+  }
+  @include respond-to(phone) {
+    .download-buttons {
+      a {
+        display: block;
+        margin: 0 auto $micro;
+        &:last-of-type {
+          margin: 0 auto;
+        }
+        img {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+
+/* Download 2 */
+
+.download-2 {
+  padding: 0;
+  background: url('../img/bg-download-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .color-overlay {
+    padding-top: $giant;
+  }
+  .download-buttons {
+    margin-bottom: $large;
+    a {
+      margin-right: $micro;
+      img {
+        max-width: 200px;
+        height: auto;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .featured-img {
+    max-width: 600px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  @include respond-to(laptop) {
+    .download-buttons {
+      padding-top: 0;
+      margin-bottom: $medium;
+    }
+  }
+  @include respond-to(phone) {
+    .download-buttons {
+      a {
+        display: block;
+        margin: 0 auto $micro;
+        &:last-of-type {
+          margin: 0 auto;
+        }
+        img {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+
+/* Download 3 */
+
+.download-3 {
+  .cta {
+    a {
+      font-size: rem(40px);
+      line-height: $huge;
+      margin: 0 $mini;
+      width: $huge;
+      height: $huge;
+    }
+    @include respond-to(phone) {
+      a {
+        width: $large;
+        height: $large;
+        font-size: rem ($small);
+        line-height: $large;
+      }
+    }
+  }
+}
+
+
+/* CTA 1 */
+
+.cta-1 {
+  h2 {
+    margin-bottom: $medium;
+    text-transform: capitalize;
+  }
+}
+
+
+/* CTA 2 */
+
+.cta-2 {
+  .buying-buttons {
+    a {
+      margin-right: $mini;
+      h3 {
+        color: $light-2;
+      }
+      p {
+        color: $light-1;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+      @include respond-to(tablet) {
+        display: block;
+        width: 80%;
+        margin: $micro auto;
+        &:last-of-type {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+
+/* CTA 3 */
+
+.cta-3 {
+  text-align: left;
+  h2 {
+    margin-bottom: $micro;
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+    p {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* CTA 4 */
+
+.cta-4 {
+  text-align: left;
+  h2 {
+    margin-bottom: $micro;
+  }
+  .cta-button {
+    padding-top: $mini;
+    text-align: center;
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+    p {
+      margin-bottom: $small;
+    }
+  }
+}
+
+
+/* CTA 5 */
+
+.cta-5 {
+  text-align: left;
+  h2 {
+    margin-bottom: $micro;
+  }
+  .cta-button {
+    padding-top: $medium;
+    text-align: center;
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+  }
+}
+
+
+/* CTA 6 */
+
+.cta-6 {
+  h2 {
+    margin-bottom: $mini;
+    text-transform: capitalize;
+  }
+  p {
+    margin-bottom: $medium;
+  }
+}
+
+
+/* CTA 7 */
+
+.cta-7 {
+  padding: 0;
+  background: url('../img/bg-download-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .color-overlay {
+    padding: $giant 0;
+  }
+  .cta-content {
+    margin-top: $mammoth;
+    h4 {
+      margin-bottom: $mini;
+      span {
+        font-family: $base-font-family;
+        font-size: $base-font-size;
+        color: $dark-1;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .cta-content {
+      margin-top: 0;
+      margin-bottom: $large;
+    }
+  }
+}
+
+
+/* CTA 8 */
+
+.cta-8 {
+  .product-card {
+    padding: $mini $micro;
+    @extend %card;
+    .product-img {
+      max-width: 80%;
+      margin: 0 auto $small;
+    }
+    .product-info {
+      text-align: left;
+      .product-name {
+        margin-bottom: $micro;
+      }
+      p {
+        margin-bottom: $mini;
+      }
+      .price {
+        margin-bottom: $medium;
+        span {
+          font-family: $base-font-family;
+          font-size: rem($micro);
+          color: $dark-1;
+        }
+      }
+      .cta-button {
+        text-align: center;
+      }
+    }
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+      .product-info {
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+/* CTA 9 */
+
+.cta-9 {
+  padding: 0;
+  background: url('../img/bg-header-real-estate-2.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  h2 {
+    margin-bottom: $mini;
+    text-transform: capitalize;
+  }
+  p {
+    margin-bottom: $medium;
+  }
+}
+
+
+/* Subscribe Form  */
+
+.subscribe-1 {
+  text-align: left;
+  .content {
+    margin-top: $large;
+  }
+  .seperator {
+    margin-left: 0;
+  }
+  p {
+    margin-bottom: $medium;
+  }
+  .ebook-subscription {
+    .input-box {
+      max-width: 80%;
+    }
+  }
+  .book-img {
+    max-width: 420px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+    .content {
+      margin-top: 0;
+      margin-bottom: $medium;
+    }
+    .seperator {
+      margin-left: auto;
+    }
+    .ebook-subscription {
+      .input-box {
+        margin: $mini auto;
+      }
+    }
+  }
+}
+
+
+/* Restaurent Resrvation Card */
+
+.reserve-resto {
+  background: url('../img/bg-form-resto.jpg') no-repeat center bottom fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  padding: 0;
+  .color-overlay {
+    padding: $giant 0;
+  }
+}

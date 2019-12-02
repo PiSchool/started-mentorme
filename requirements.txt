@@ -1,1 +1,2 @@
-sacred
+beautifulsoup4
+requests

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--=============================================>>>>>
+= Head =
+===============================================>>>>-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Title -->
+  <title>Medical Support</title>
+  <meta name="description" content="Movify: A new way to explore movies">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Movies,Recommender System,Recommendation,Exploring,Suggest Me Movie,Startup,">
+  <!-- Favicons (High Resolution) -->
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="icons/pe-icon-7-stroke/css/helper.css">
+  <link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
+  <!-- Plugin Stylesheets -->
+  <link rel="stylesheet" href="css/plugins/plugins.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main2.css">
+
+  <!-- Modernizr -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/plugins/plugins.min.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="js/main.js"></script>
+  <script src="lib/typed.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+
+    function add_table_row(name, description){
+      /*
+      Funzione per inserire un risultato (riga) all'interno della tabella
+      */
+
+      table_head = "<tr>"
+      table_body = "<tr>"
+
+
+      table_head = table_head + '<th scope="col" id="table-col">Name</th>'
+      table_body = table_body + "<td><a target='_blank' href=\"#\">" + name + "</a></td>"
+
+
+      table_head = table_head + '<th scope="col" id="table-col">Description</th>'
+      table_body = table_body + "<td><a target='_blank' href=\"#\">" + description + "</a></td>"
+
+
+      table_head = table_head + "</tr>"
+
+      table_body = table_body + "</tr>"
+
+      if(! $("#table-col").length) {
+        $( "#table-head").append(table_head);
+      }
+      $( "#table-body").append(table_body);
+    }
+
+
+
+
+    function do_get_query_graphDB(query_string){
+
+    }
+
+    function preprocess_string(query_string){
+      add_table_row('Andrea Santilli', 'Esperto in programmazione bla bla ')
+      add_table_row('Fabrizo Lo scudo', 'Esperto in  bla bla ')
+    }
+
+    $( document ).ready(function() {
+      // Eseguita al caricamento della pagina
+      //Prendo i parametri passati con la get dall'url
+      console.log( "ready!" );
+
+      $('.submit_on_enter').keydown(function(event) {
+        // Funzione per effettuare il submit premendo enter
+        if (event.keyCode == 13) {
+          input = $('#typed4').val()
+          window.location.href = "search.html?search=" + input;
+        }
+      });
+
+
+      let searchParams = new URLSearchParams(window.location.search)
+      if(searchParams.has('search')){
+        search_query = searchParams.get('search')
+        console.log(search_query)
+        $('#typed4').val(search_query)
+
+        preprocess_string(search_query)
+        //TODO inserire qui la query giusta
+        //prova = 'select * where {?s ?p ?o .} limit 100'
+        //do_get_query_graphDB(prova)
+      }
+   });
+
+
+  </script>
+</head>
+<body>
+  <!-- Navigation Start -->
+  <nav class="navbar navbar-fixed-top nav-light scroll-light">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+          <img src="img/unitech.png" alt="Medicine Logo" style="height: auto;">
+        </a>
+
+        <div class="navbar-brand" style="padding-top: 0px">
+            <input id="typed4" type="text" class="form-control input-box typed-cursor submit_on_enter" placeholder="Hello World!"  style="margin-left: auto;
+    margin-right: auto;"required>
+        </div>
+      </div>
+      <div class="navbar-collapse collapse" id="main-nav">
+        <ul class="nav navbar-nav navbar-right arpa-nav">
+          <li>
+            <a class="button-primary button-small-solid button-dark-solid" id="target" href="#">Search</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation End -->
+  <section class="header header-web-service-1" id="hero">
+    <div class="light-background-1">
+      <div class="container header-content">
+        <table class="table table-striped">
+          <thead id="table-head">
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<script type="text/javascript">
+
+
+	$( "#target" ).click(function() {
+		input = $('#typed4').val()
+	  window.location.href = "search.html?search=" + input;
+	});
+
+</script>
+
+
+</body>
+</html>

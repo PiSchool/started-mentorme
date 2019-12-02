@@ -1,0 +1,152 @@
+/**
+ *
+ * Blog Sections Design
+ *
+ */
+
+
+/* General Blog Card*/
+
+.blog-card {
+  @extend %card;
+  .blog-title {
+    padding: $mini $micro;
+    text-align: left;
+  }
+  .blog-info {
+    margin-bottom: $mini;
+    padding: 0 $micro;
+    color: $dark-2;
+    @include clearfix;
+    .blog-author {
+      float: left;
+    }
+    .blog-date {
+      float: right;
+    }
+  }
+  .blog-content {
+    padding: 0 $micro $micro;
+    text-align: left;
+  }
+  .read-more {
+    padding: $micro;
+    text-align: left;
+    a {
+      text-decoration: underline;
+      color: $dark-2;
+    }
+  }
+  @include respond-to(laptop) {
+    max-width: 400px;
+    margin: 0 auto $medium;
+  }
+}
+
+
+/* Blog 3 / Blog Title */
+
+.blog-3 {
+  .blog-topic {
+    text-align: left;
+    .blog-date {
+      margin-bottom: $micro;
+      color: $dark-2;
+    }
+    .blog-title {
+      margin-bottom: $micro;
+    }
+    .blog-author {
+      font-style: italic;
+      margin-bottom: $small;
+    }
+  }
+  @include respond-to(laptop) {
+    .blog-topic {
+      margin-bottom: $large;
+    }
+  }
+}
+
+
+/* Blog  4 */
+
+.blog-4 {
+  .blog-single {
+    border: 1px solid $stroke;
+    border-radius: $micro / 4;
+    .blog-title {
+      padding: $mini $micro;
+      text-align: left;
+    }
+    .blog-info {
+      margin-bottom: $mini;
+      padding: 0 $micro;
+      color: $dark-2;
+      @include clearfix;
+      .blog-author {
+        float: left;
+      }
+      .blog-date {
+        float: right;
+      }
+    }
+    .blog-content {
+      padding: 0 $micro $micro;
+      text-align: left;
+    }
+    .read-more {
+      padding: $micro;
+      text-align: left;
+      a {
+        text-decoration: underline;
+        color: $dark-2;
+      }
+    }
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+  }
+}
+
+
+/* Blog  5 */
+
+.blog-5 {
+  .row {
+    padding: $large 0;
+    border-bottom: 1px solid $stroke;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  .blog-single {
+    .blog-info {
+      padding-top: $large;
+      text-align: left;
+      .blog-date {
+        margin-bottom: $mini;
+      }
+      h4 {
+        color: $set2-accent-1;
+        margin-bottom: $medium;
+      }
+      .blog-content {
+        margin-bottom: $mini;
+      }
+      .blog-author {
+        font-style: italic;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .row {
+      border-bottom: none;
+    }
+    .blog-single {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+  }
+}

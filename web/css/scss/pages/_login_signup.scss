@@ -1,0 +1,34 @@
+/* Login Form Page */
+
+.login-form,
+.signup-form {
+  min-height: 100vh;
+  padding: 0;
+  background: url('../img/bg-coming-soon.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .color-overlay {
+    min-height: 100vh;
+    padding: $mammoth 0;
+    .logo {
+      margin-bottom: $large;
+    }
+    .login-card,
+    .signup-card {
+      margin-bottom: $large;
+      border-radius: $micro/4;
+    }
+    .section-heading {
+      h4 {
+        line-height: 1.5;
+      }
+    }
+    .copyright {
+      color: $light-1;
+      a {
+        color: $light-2;
+      }
+    }
+  }
+}
