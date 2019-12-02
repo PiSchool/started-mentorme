@@ -1,0 +1,220 @@
+/**
+ *
+ * Services Sections
+ *
+ */
+
+
+/* Services 1 - Agency 1*/
+
+.services-1 {
+  .row-1 {
+    margin-bottom: $small;
+  }
+  .service {
+    padding: $small;
+    @extend %card;
+    i {
+      margin-bottom: $micro;
+      color: $dark-2;
+      font-size: rem($small);
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    .row-1 {
+      margin-bottom: 0;
+    }
+    .service {
+      margin-bottom: $small;
+    }
+  }
+}
+
+
+/* Services 2 - Agency 2 */
+
+.services-2 {
+  .row-first {
+    border-bottom: 1px solid $stroke;
+  }
+  .column-first,
+  .column-second {
+    border-right: 1px solid $stroke;
+  }
+  .service {
+    padding: $medium;
+    i {
+      margin-bottom: $micro;
+      color: $light-2;
+      font-size: rem($small);
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    .column-first,
+    .column-second,
+    .row-first {
+      border: none;
+    }
+  }
+}
+
+
+/* Services 3 - Agency 3 */
+
+.services-3 {
+  .feature-list {
+    li {
+      display: inline-block;
+      margin: 0 $medium $medium;
+      a {
+        color: $set2-accent-1;
+        font-size: rem($medium);
+        @include transition(all $base-duration $base-timing);
+        &:active,
+        &:focus,
+        &:hover {
+          color: $dark-2;
+        }
+      }
+    }
+  }
+  .service {
+    padding: $medium $micro;
+    border-top: 1px solid $stroke;
+    border-bottom: 1px solid $stroke;
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(tablet) {
+    .feature-list {
+      li {
+        display: block;
+      }
+    }
+  }
+}
+
+
+/* Services 4 - Freelance 1 */
+
+.services-4 {
+  .section-heading {
+    h2 {
+      color: $light-2;
+    }
+    .seperator {
+      background: $light-2;
+    }
+  }
+  .row-first {
+    border-bottom: 1px solid $stroke;
+  }
+  .column-first,
+  .column-second {
+    border-right: 1px solid $stroke;
+  }
+  .service {
+    padding: $medium;
+    i {
+      margin-bottom: $micro;
+      color: $light-2;
+      font-size: rem($small);
+    }
+    h4 {
+      margin-bottom: $mini;
+      color: $light-2;
+    }
+    p {
+      color: $light-1;
+    }
+  }
+  @include respond-to(laptop) {
+    .column-first,
+    .column-second,
+    .row-first {
+      border: none;
+    }
+  }
+}
+
+
+/* Services 5 - Travel 1 */
+
+.services-5 {
+  .service {
+    i {
+      font-size: rem($medium);
+      color: $set4-accent-1;
+      margin-bottom: $mini;
+    }
+    h4 {
+      margin-bottom: $small;
+    }
+    @include respond-to(laptop) {
+      margin: $medium auto;
+    }
+  }
+}
+
+
+/* Services 6 - Travel 2 */
+
+.services-6 {
+  position: relative;
+  padding: $huge * 2 0;
+  .travel-services-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../img/bg-about-travel.jpg') no-repeat;
+    @include prefixer(background-size,
+    cover,
+    webkit moz o spec);
+  }
+  .service {
+    margin: $medium 0;
+    i {
+      font-size: rem($medium);
+      margin-bottom: $micro;
+      color: $dark-2;
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    padding-top: 0;
+    .travel-services-img {
+      top: 0;
+      left: 0;
+      position: relative;
+      height: $mammoth * 4;
+      width: 100%;
+      margin-bottom: $huge * 2;
+    }
+  }
+}
+
+
+/* Services 7 - Real Estate 2 */
+
+.services-7 {
+  @extend .services-1;
+  .section-heading {
+    h2 {
+      color: $light-2;
+    }
+    .seperator {
+      background: $light-2;
+    }
+  }
+}

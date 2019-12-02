@@ -1,0 +1,39 @@
+/**
+ *
+ * Faq Sections
+ *
+ */
+
+
+/* Faq Simple */
+
+.faq-2 {
+  ul {
+    li {
+      margin-bottom: $medium;
+      text-align: left;
+      h5 {
+        margin-bottom: $micro/2;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .column-1 {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* FAQ 3 */
+
+.faq-3 {
+  @include respond-to(laptop) {
+    .column-first {
+      margin-bottom: $micro;
+    }
+  }
+}

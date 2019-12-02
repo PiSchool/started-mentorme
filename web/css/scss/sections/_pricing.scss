@@ -1,0 +1,461 @@
+/**
+ *
+ * Price Tables
+ *
+ */
+
+
+/* Pricing 1 */
+
+.pricing-1 {
+  .price-table {
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+  }
+  .table-header {
+    padding: $small 0 $medium;
+    background: $dark-2;
+    @include border-top-radius($micro/4);
+    .plan-name {
+      margin-bottom: $mini;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $light-2;
+    }
+    .currency,
+    .price {
+      color: $light-1;
+    }
+    .currency {
+      font-size: rem(24);
+    }
+    .price {
+      font-size: rem(48);
+    }
+  }
+  .table-body {
+    padding: 0 $micro/2 $small;
+    border: 1px solid $stroke;
+    @include border-bottom-radius($micro/4);
+    .features {
+      margin: $medium 0;
+      padding: 0;
+      list-style-type: none;
+       :last-child {
+        margin-bottom: 0;
+      }
+      li {
+        margin-bottom: $mini;
+      }
+    }
+  }
+}
+
+
+/* Pricing 2  */
+
+.pricing-2 {
+  .price-table {
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+  }
+  .table-header {
+    padding: $small 0 $medium;
+    background: $dark-2;
+    @include border-top-radius($micro/4);
+    .plan-name {
+      margin-bottom: $mini;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $light-2;
+    }
+    .currency,
+    .price {
+      color: $light-1;
+    }
+    .currency {
+      font-size: rem(24);
+    }
+    .price {
+      font-size: rem(48);
+    }
+  }
+  .table-body {
+    padding: 0 $micro/2 $small;
+    border: 1px solid $stroke;
+    @include border-bottom-radius($micro/4);
+    .features {
+      margin: $medium 0;
+      padding: 0;
+      list-style-type: none;
+       :last-child {
+        margin-bottom: 0;
+      }
+      li {
+        margin-bottom: $mini;
+      }
+      .na {
+        text-decoration: line-through;
+        color: $stroke;
+      }
+    }
+  }
+}
+
+
+/* Pricing 3 */
+
+.pricing-3 {
+  .price-table {
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+  }
+  .table-header {
+    padding: $small 0 $medium;
+    background: $dark-2;
+    @include border-top-radius($micro/4);
+    .plan-name {
+      margin-bottom: $mini;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $light-2;
+    }
+    .currency,
+    .price {
+      color: $light-1;
+    }
+    .currency {
+      font-size: rem(24);
+    }
+    .price {
+      font-size: rem(48);
+    }
+  }
+  .table-body {
+    padding: 0 $micro/2 $small;
+    border: 1px solid $stroke;
+    @include border-bottom-radius($micro/4);
+    .features {
+      margin: $medium 0;
+      padding: 0;
+      list-style-type: none;
+       :last-child {
+        margin-bottom: 0;
+      }
+      li {
+        margin-bottom: $mini;
+      }
+    }
+  }
+  .table-featured {
+    .table-header {
+      background: $set3-accent-1;
+    }
+    .table-body {
+      border: 1px solid $set3-accent-1;
+    }
+  }
+}
+
+
+/* Pricing 4 */
+
+.pricing-4 {
+  @extend .pricing-2;
+  .table-header {
+    @include linear-gradient(to right, $set4-accent-1, $set4-accent-2);
+  }
+}
+
+
+/* Pricing 5 */
+
+.pricing-5 {
+  .price-table {
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+    .table-header {
+      padding: $small;
+      background: $dark-2;
+      @include border-top-radius($micro/4);
+      .plan-name {
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $light-2;
+      }
+    }
+    .table-body {
+      @include border-bottom-radius($micro/4);
+      border: 1px solid $stroke;
+      padding: $small 0;
+      .features {
+        margin: $medium 0;
+        padding: 0;
+        list-style-type: none;
+         :last-child {
+          margin-bottom: 0;
+        }
+        li {
+          margin-bottom: $mini;
+        }
+      }
+      .price {
+        padding: $mini;
+        border-top: 1px solid $stroke;
+        border-bottom: 1px solid $stroke;
+        font-size: rem(48);
+        margin-bottom: $medium;
+      }
+      .small {
+        font-size: rem(16);
+        color: $dark-2;
+      }
+    }
+  }
+}
+
+
+/* Pricng 6 */
+
+.pricing-6 {
+  .row-first {
+    margin-bottom: $small;
+  }
+  .price-table {
+    @extend %card;
+    padding: $medium;
+    .plan-name {
+      margin-bottom: $large;
+      h4 {
+        margin-bottom: $micro;
+      }
+    }
+    .plan-price {
+      margin-bottom: $small;
+      p {
+        margin-bottom: $micro/2;
+      }
+      .small {
+        font-size: rem(16);
+        color: $dark-2;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .row-first {
+      margin-bottom: 0;
+    }
+    .price-table {
+      margin: $small auto;
+      max-width: 400px;
+    }
+  }
+}
+
+
+/* Pricng 7 */
+
+.pricing-7 {
+  @extend .pricing-5;
+}
+
+
+/* Pricng 8 */
+
+.pricing-8 {
+  .price-table {
+    background: $dark-2;
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+  }
+  .table-header {
+    padding: $small 0;
+    @include border-top-radius($micro/4);
+    border-bottom: 1px solid $stroke;
+    .plan-name {
+      margin-bottom: $mini;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $light-2;
+    }
+    .currency,
+    .price {
+      color: $light-1;
+    }
+    .currency {
+      font-size: rem(24);
+    }
+    .price {
+      font-size: rem(48);
+    }
+  }
+  .table-body {
+    padding: 0 $micro/2 $small;
+    @include border-bottom-radius($micro/4);
+    .features {
+      margin: $small 0 $medium;
+      padding: 0;
+      list-style-type: none;
+       :last-child {
+        margin-bottom: 0;
+      }
+      li {
+        margin-bottom: $mini;
+        color: $light-2;
+      }
+    }
+  }
+}
+
+
+/* Pricing 9 */
+
+.pricing-9 {
+  .price-table {
+    @extend %card;
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+  }
+  .table-header {
+    padding: $small 0;
+    @include border-top-radius($micro/4);
+    border-bottom: 1px solid $stroke;
+    .plan-name {
+      margin-bottom: $mini;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: $dark-2;
+    }
+    .currency,
+    .price {
+      color: $dark-2;
+    }
+    .currency {
+      font-size: rem(24);
+    }
+    .price {
+      font-size: rem(48);
+    }
+  }
+  .table-body {
+    padding: 0 $micro/2 $small;
+    @include border-bottom-radius($micro/4);
+    .features {
+      margin: $small 0 $medium;
+      padding: 0;
+      list-style-type: none;
+       :last-child {
+        margin-bottom: 0;
+      }
+      li {
+        margin-bottom: $mini;
+        color: $dark-1;
+      }
+    }
+  }
+}
+
+
+/* Pricing 10 */
+
+.pricing-10 {
+  .price-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $small;
+    margin-bottom: $medium;
+    border: 1px solid $stroke;
+    border-radius: $micro/4;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    div {
+      flex-basis: 27%;
+    }
+    .plan-price {
+      .currency {
+        font-size: rem($mini);
+      }
+    }
+    @include respond-to(tablet) {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto $medium;
+      div {
+        margin: $small auto;
+      }
+    }
+  }
+}
+
+
+/* Restaurent & Coffeehouse Menu */
+
+.menu-resto {
+  .resto-menu-main {
+    text-align: left;
+    .menu-category {
+      padding: $medium 0;
+      .menu-category-heading {
+        margin-bottom: $small;
+        padding-bottom: $micro;
+        border-bottom: 1px solid $stroke;
+      }
+      .menu-items {
+        li {
+          margin-bottom: $small;
+          @include clearfix;
+          .dish {
+            float: left;
+            h5 {
+              margin-bottom: $micro / 2;
+            }
+          }
+          .price {
+            float: right;
+            text-align: right;
+            h5 {
+              margin-bottom: $micro / 2;
+            }
+            .recommended {
+              margin-bottom: $micro / 2;
+              padding: $micro / 4;
+              color: $set1-accent-1;
+              border: 1px solid $set1-accent-1;
+              border-radius: $micro / 4;
+            }
+          }
+          @include respond-to(laptop) {
+            margin-bottom: $small;
+            .dish,
+            .price {
+              float: none;
+              text-align: left;
+            }
+            .dish {
+              margin-bottom: $micro;
+            }
+            .price {
+              h5 {
+                margin-bottom: $micro;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

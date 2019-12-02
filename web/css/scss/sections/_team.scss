@@ -1,0 +1,491 @@
+/**
+ *
+ * Team Sections
+ *
+ */
+
+
+/* Team 1 */
+
+
+
+.team-1 {
+  .team-card {
+    max-width: 320px;
+    border: 1px solid $stroke;
+    @include respond-to(laptop) {
+      margin: 0 auto $medium;
+    }
+    .team-info {
+      padding: $mini $micro;
+      @include clearfix();
+      .team-title {
+        text-align: left;
+        h4 {
+          margin-bottom: $micro / 4;
+        }
+        p {
+          color: $dark-1;
+          font-style: italic;
+        }
+      }
+      .team-social {
+        text-align: right;
+        a {
+          margin-right: $micro / 4;
+          vertical-align: middle;
+          color: $dark-1;
+          @include transition(all .2s ease-in-out);
+          &:hover {
+            color: $dark-2;
+          }
+        }
+         :last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .team-description {
+      padding: 0 $micro $mini;
+      text-align: left;
+    }
+  }
+}
+
+
+/* Team 2 */
+
+.team-2 {
+  .row-1 {
+    margin-bottom: $large;
+  }
+  .team-member {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .team-img {
+    margin-bottom: $small;
+    img {
+      border-radius: 100%;
+    }
+  }
+  .team-info {
+    h4 {
+      margin-bottom: $micro/2;
+      line-height: 1;
+    }
+    p {
+      color: $dark-1;
+      font-style: italic;
+    }
+  }
+  .team-description {
+    margin-bottom: $mini;
+    padding: $mini 0;
+    border-bottom: 1px solid $stroke;
+  }
+  .team-social {
+    a {
+      margin: 0 $micro/2;
+      vertical-align: middle;
+      color: $dark-1;
+      @include transition(all .2s ease-in-out);
+      &:hover {
+        color: $dark-2;
+      }
+    }
+  }
+  .row-2 {
+    .team-member {
+      max-width: 90%;
+    }
+  }
+  @include respond-to(laptop) {
+    .row-2 {
+      .team-member {
+        max-width: 60%;
+      }
+    }
+    .team-member {
+      margin-bottom: $small;
+    }
+  }
+}
+
+
+/* Team 3 */
+
+.team-3 {
+  .instructor {
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+    .instructor-info {
+      padding: $small $micro;
+      background: $set4-accent-1;
+      .instructor-name {
+        margin-bottom: $mini;
+        h4 {
+          color: $light-2;
+        }
+      }
+      .instructor-description {
+        margin-bottom: $small;
+        color: $light-1;
+      }
+      .social-links {
+        li {
+          display: inline-block;
+          margin-right: $micro;
+          a {
+            color: $light-1;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Team  4 */
+
+.team-4 {
+  @extend .team-3;
+  .instructor {
+    .instructor-info {
+      background: $dark-2;
+    }
+  }
+}
+
+
+/* Team  5 */
+
+.team-5 {
+  .team-card {
+    max-width: 320px;
+    @include respond-to(laptop) {
+      margin: 0 auto $medium;
+    }
+    .team-img {
+      margin-bottom: $mini;
+      img {
+        border-radius: 100%;
+      }
+    }
+    .team-title {
+      h4 {
+        margin-bottom: $micro / 4;
+      }
+      p {
+        font-style: italic;
+      }
+    }
+    .team-description {
+      border-bottom: 1px solid $stroke;
+      padding: $mini 0;
+    }
+    .team-social {
+      padding-top: $mini;
+      a {
+        margin-right: $micro / 2;
+        vertical-align: middle;
+        color: $dark-1;
+        @include transition(all .2s ease-in-out);
+        &:hover {
+          color: $dark-2;
+        }
+      }
+       :last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+/* Team 6 */
+
+.team-6 {
+  @extend .team-1;
+  .team-card {
+    @extend %card;
+    border: none;
+    .team-info {
+      .team-title {
+        p {
+          color: $dark-2;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+
+/* Team 7 */
+
+.team-7 {
+  .team-card {
+    @extend %card;
+    margin: 0 $mini/2 $mini;
+    .team-info {
+      padding: $mini $micro;
+      @include clearfix();
+      .team-title {
+        text-align: left;
+        h4 {
+          margin-bottom: $micro / 4;
+        }
+        p {
+          color: $dark-1;
+          font-style: italic;
+        }
+      }
+    }
+    .team-description {
+      padding: 0 $micro $mini;
+      text-align: left;
+    }
+  }
+}
+
+
+/* Team 8 */
+
+.team-8 {
+  .team-card {
+    border: 1px solid $stroke;
+    margin: 0 $mini/2 $mini;
+    .team-info {
+      padding: $mini $micro;
+      @include clearfix();
+      .team-title {
+        text-align: left;
+        h4 {
+          margin-bottom: $micro / 4;
+        }
+        p {
+          color: $dark-1;
+          font-style: italic;
+        }
+      }
+    }
+    .team-description {
+      padding: 0 $micro $mini;
+      text-align: left;
+    }
+    .team-social {
+      a {
+        margin: 0 $micro/2;
+        vertical-align: middle;
+        color: $dark-1;
+        @include transition(all .2s ease-in-out);
+        &:hover {
+          color: $dark-2;
+        }
+      }
+    }
+  }
+
+  
+}
+
+
+/* Team 9 */
+
+.team-9 {
+  .team-card {
+    max-width: 320px;
+    @include respond-to(laptop) {
+      margin: 0 auto $medium;
+    }
+    img {
+      @include prefixer(box-shadow, 0 0 16px 0 rgba( $dark-1, 0.16), webkit moz spec);
+      border-radius: 100%;
+      border: $micro/2 solid $light-2;
+      margin-bottom: $small;
+    }
+    .team-info {
+      .team-title {
+        margin-bottom: $micro;
+      }
+      .team-description {
+        padding-bottom: $mini;
+        margin-bottom: $mini;
+        border-bottom: 1px solid $stroke;
+      }
+      .team-phone {
+        margin-bottom: $micro/2;
+        a {
+          color: $dark-1;
+          @include transition(all $base-duration $base-timing);
+          &:active,
+          &:hover,
+          &:focus {
+            color: $dark-2;
+          }
+        }
+      }
+      .team-social {
+        a {
+          margin-right: $micro / 2;
+          vertical-align: middle;
+          color: $dark-1;
+          @include transition(all .2s ease-in-out);
+          &:hover {
+            color: $dark-2;
+          }
+        }
+         :last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/* Team 10 */
+
+.team-10 {
+  .team-img {
+    margin: 0 auto;
+    max-width: 90%;
+    img {
+      width: 100%;
+      height: auto;
+      @include filter(grayscale(100%));
+    }
+  }
+  .first-row {
+    margin-bottom: $mammoth;
+  }
+  .team-info {
+    padding-top: $large;
+    text-align: left;
+    .team-name {
+      margin-bottom: $small;
+    }
+    .team-about {
+      margin-bottom: $micro;
+    }
+    .team-social {
+      .social-links {
+        li {
+          display: inline-block;
+          margin-right: $micro;
+          a {
+            color: $dark-1;
+            @include transition(all $base-duration $base-timing);
+            &:hover,
+            &:active,
+            &:focus {
+              color: $dark-2;
+            }
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .first-row {
+      margin-bottom: 0;
+    }
+    .team-member {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+    .team-info {
+      text-align: center;
+    }
+  }
+}
+
+
+/* Team 11 */
+
+.team-11 {
+  .row-first {
+    margin-bottom: $medium;
+  }
+  .team-unit {
+    position: relative;
+    .team-img {
+      @extend %card;
+      padding: 1px;
+      img {
+        border-radius: $micro / 4;
+      }
+    }
+    .team-img:after {
+      position: absolute;
+      z-index: 1;
+      right: -$mini;
+      bottom: 50%;
+      display: block;
+      width: 0;
+      content: '';
+      @include transform(translate(-50%)rotate(-90deg));
+      border-width: $micro $micro 0;
+      border-style: solid;
+      border-color: $light-2 transparent;
+    }
+    .team-info {
+      text-align: left;
+      padding: 20px $mini;
+      border-radius: $micro / 4;
+      border: 1px solid $stroke;
+      .team-name {
+        h4 {
+          margin-bottom: $mini;
+        }
+      }
+      .team-description {
+        p {
+          margin-bottom: $medium;
+        }
+      }
+      .team-social {
+        a {
+          margin-right: $micro/2;
+          vertical-align: middle;
+          color: $light-2;
+          @include transition(all .2s ease-in-out);
+          &:last-of-type {
+            margin-right: 0;
+          }
+          &:hover {
+            color: $light-1;
+          }
+        }
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .row-first {
+      margin-bottom: 0;
+    }
+    .team-unit {
+      max-width: 400px;
+      margin: 0 auto $medium;
+      .team-img {
+        margin-bottom: $small;
+      }
+      .team-img:after {
+        display: none;
+      }
+      .team-info {
+        text-align: center
+      }
+    }
+  }
+}
+

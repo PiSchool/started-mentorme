@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--=============================================>>>>>
+= Head =
+===============================================>>>>-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Title -->
+  <title>Unitech</title>
+  <meta name="description" content="Movify: A new way to explore movies">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Movies,Recommender System,Recommendation,Exploring,Suggest Me Movie,Startup,">
+  <!-- Favicons (High Resolution) -->
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="icons/pe-icon-7-stroke/css/helper.css">
+  <link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
+  <!-- Plugin Stylesheets -->
+  <link rel="stylesheet" href="css/plugins/plugins.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main2.css">
+
+  <!-- Modernizr -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+  <section class="header header-web-service-1" id="hero">
+    <div class="light-background-1">
+      <div class="container header-content">
+        <div class="row">
+          <div class="col-md-12" style=" margin: auto;">
+          <div class="header-text" style="margin-bottom: 30px;">
+            <div class="hero-img">
+            <img src="img/unitech.png" alt="Movify Hero">
+            </div>
+          </div>
+          <div class="cta local-scroll">
+            <input id="typed5" type="text" class="form-control input-box typed-cursor" autofocus="autofocus" style="width: 300px; margin-left: auto;
+    margin-right: auto;"required>
+            <input id="typed4" type="text" class="form-control input-box typed-cursor" autofocus="autofocus" style="width: 600px; margin-left: auto;
+    margin-right: auto;"required>
+
+            <a class="button-primary button-small-solid button-dark-solid" id="target" href="#">Search</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/plugins/plugins.min.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="js/main.js"></script>
+  <script src="lib/typed.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var typed4 = new Typed('#typed4', {
+    strings: ['Artificial Intelligence for the automation of space missions.', 'electric scooters', 'bluethoot tracker', 'Artificial Intelligence for humans'],
+    typeSpeed: 60,
+    startDelay: 6000,
+    backSpeed: 60,
+    bindInputFocusEvents: true,
+    loop: true
+  });
+
+  var typed5 = new Typed('#typed5', {
+    strings: ['Andrea Santilli'],
+    typeSpeed: 60,
+    startDelay: 3000,
+    backSpeed: 0,
+    bindInputFocusEvents: true,
+    loop: false
+  });
+
+  $( "#target" ).click(function() {
+		input = $('#typed5').val();
+    input_topic = $('#typed4').val();
+		window.location.href = "search.html?search=" + input + "&topic=" + input_topic;
+	});
+
+</script>
+</body>
+</html>

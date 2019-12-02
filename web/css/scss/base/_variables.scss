@@ -1,0 +1,74 @@
+//Bourbon
+$prefix-for-webkit: true;
+$prefix-for-mozilla: true;
+$prefix-for-microsoft: true;
+$prefix-for-opera: true;
+$prefix-for-spec: true;
+///////////////
+// Typography
+//////////////
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto:400,400i');
+$base-font-family: "Roboto",
+sans-serif;
+$heading-font-family: "Poppins",
+sans-serif;
+// Font Sizes
+$base-font-size: rem(16);
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+// Font Colors
+$dark-1: #6b7684;
+$dark-2: #1f2533;
+$light-1: #f6f6f8;
+$light-2: #fff;
+$stroke: #e0dfe6;
+//////////////
+// Animations
+/////////////
+$base-duration: 200ms;
+$base-timing: $ease-in-out-sine;
+////////////////
+//Color Schemes
+///////////////
+//set-1
+$set1-accent-1: #d4145a;
+$set1-accent-2: #fbb03b;
+//set-2
+$set2-accent-1: #fb872b;
+$set2-accent-2: #d9e021;
+//set-3
+$set3-accent-1: #4f00bc;
+$set3-accent-2: #29abe2;
+//set-4
+$set4-accent-1: #3acf59;
+$set4-accent-2: #0cf;
+////////////////////
+//Spacing Variables
+///////////////////
+$micro: 16px;
+$mini: 24px;
+$small: 32px;
+$medium: 48px;
+$large: 64px;
+$huge: 80px;
+$mega: 96px;
+$giant: 112px;
+$mammoth: 120px;
+///////////////
+// Breakpoints
+//////////////
+@include breakpoint-set('default feature',
+'max-width');
+@include add-breakpoint('laptop-l',
+'only screen' 1365px);
+@include add-breakpoint('laptop',
+'only screen' 991px);
+@include add-breakpoint('tablet',
+'only screen' 767px);
+@include add-breakpoint('phone',
+'only screen' 479px);
+@include add-breakpoint('sphone',
+'only screen' 375px);
+@include add-breakpoint('retina',
+'min-resolution' 1.5dppx);

@@ -1,0 +1,951 @@
+/**
+ *
+ * General Header Styles
+ *
+ */
+
+.header {
+  padding: 0;
+  .color-overlay,
+  .pattern-overlay {
+    min-height: 75vh;
+    padding: $mammoth 0;
+  }
+  .header-content {
+    .logo {
+      margin-bottom: $mega;
+    }
+    .header-text {
+      margin-bottom: $mega;
+      .headline {
+        margin-bottom: $small;
+        color: $light-2;
+      }
+      .subline {
+        color: $light-1;
+      }
+    }
+  }
+}
+
+
+/**
+ *
+ * Custom Header Styles
+ *
+ */
+
+
+/* Restaurent Hero */
+
+.header-restaurent {
+  background: url('../img/bg-header-restaurent.jpg') no-repeat center bottom fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $mammoth;
+  }
+}
+
+
+/* CoffeeHouse Hero */
+
+.header-coffee-house {
+  background: url('../img/bg-header-coffee-house.jpg') no-repeat center bottom fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+  }
+  .header-text {
+    padding-top: $mammoth;
+    text-align: left;
+  }
+  @include respond-to(laptop) {
+    .header-text {
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+/* Agency Hero 1  */
+
+.header-agency-1 {
+  background: url('../img/bg-header-agency.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-text {
+    padding-top: $giant;
+  }
+}
+
+
+/* Agency Hero 2 */
+
+.header-agency-2 {
+  min-height: 100vh;
+  .header-content {
+    .logo {
+      margin-bottom: $mega*2;
+    }
+  }
+  .pattern-overlay {
+    min-height: 100vh;
+  }
+  @include respond-to(tablet) {
+    .header-content {
+      .logo {
+        margin-bottom: $mega;
+      }
+    }
+  }
+}
+
+
+/* Agency Hero 3 */
+
+.header-agency-3 {
+  background: url('../img/bg-header-agency.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+  }
+  .header-text {
+    padding-top: $mega;
+    text-align: left;
+  }
+  @include respond-to(laptop) {
+    .header-text {
+      text-align: center;
+      padding-top: 0;
+    }
+  }
+}
+
+
+/* App Hero 1 */
+
+.header-app-1 {
+  background: url('../img/bg-header-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    .header-text {
+      padding-top: $huge;
+      text-align: left;
+      .headline {
+        color: $dark-2;
+      }
+      .subline {
+        color: $dark-1;
+      }
+    }
+  }
+  .cta {
+    text-align: left;
+    a {
+      margin-right: $mini;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .hero-img {
+    max-width: 400px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  @include respond-to(laptop) {
+    .header-content {
+      .header-text {
+        padding-top: 0;
+        text-align: center;
+      }
+    }
+    .cta {
+      text-align: center;
+      margin-bottom: $medium;
+    }
+  }
+  @include respond-to(phone) {
+    .cta {
+      a {
+        display: block;
+        width: 80%;
+        margin: 0 auto $micro;
+        &:last-of-type {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+
+/* App Hero 2 */
+
+.header-app-2 {
+  padding-bottom: 0;
+  background: url('../img/bg-header-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .color-overlay {
+    padding-bottom: 0;
+  }
+  .header-content {
+    .header-text {
+      margin-bottom: $large;
+      .headline {
+        color: $dark-2;
+      }
+      .subline {
+        color: $dark-1;
+      }
+    }
+  }
+  .cta {
+    margin-bottom: $large;
+    a {
+      margin-right: $micro;
+      img {
+        max-width: 200px;
+        height: auto;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .hero-img {
+    img {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+  @include respond-to(phone) {
+    .cta {
+      a {
+        display: block;
+        margin: 0 auto $micro;
+        &:last-of-type {
+          margin: 0 auto;
+        }
+        img {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}
+
+
+/* App Hero 3 */
+
+.header-app-3 {
+  background: url('../img/bg-header-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    .header-text {
+      padding-top: $giant;
+      margin-bottom: $large;
+      .headline {
+        color: $dark-2;
+      }
+      .subline {
+        color: $dark-1;
+      }
+    }
+    .cta {
+      margin-bottom: $huge;
+    }
+    .hero-img {
+      img {
+        max-height: $mammoth*6;
+      }
+    }
+  }
+}
+
+
+/* App Hero 4 */
+
+.header-app-4 {
+  .light-overlay {
+    background: transparentize($light-2, .2);
+  }
+  .header-content {
+    .header-text {
+      padding-top: $huge;
+      text-align: left;
+      .headline {
+        color: $dark-2;
+      }
+      .subline {
+        color: $dark-1;
+      }
+    }
+  }
+  .cta {
+    text-align: left;
+    a {
+      margin-right: $mini;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .hero-img {
+    max-width: 400px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  @include respond-to(laptop) {
+    .header-content {
+      .header-text {
+        padding-top: 0;
+        text-align: center;
+      }
+    }
+    .cta {
+      text-align: center;
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* Web-Service Hero 1 */
+
+.header-web-service-1 {
+  background: url('../img/bg-header-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+  }
+  .cta {
+    margin-bottom: $large;
+  }
+}
+
+
+/* Web-Service Hero 2 */
+
+.header-web-service-2 {
+  position: relative;
+  background: url('../img/bg-header-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .color-overlay {
+    padding-bottom: $mammoth * 3;
+  }
+  .header-content {
+    padding-top: $giant;
+  }
+  .hero-img {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 720px;
+    min-height: 720px;
+  }
+  .header-text {
+    padding-top: $large;
+    text-align: left;
+  }
+  .cta {
+    text-align: left;
+  }
+  @include respond-to(laptop) {
+    .color-overlay {
+      padding-bottom: $mammoth;
+    }
+    .hero-img {
+      display: none;
+    }
+    .header-text {
+      padding-top: 0;
+      text-align: center;
+    }
+    .cta {
+      text-align: center;
+    }
+  }
+}
+
+
+/* Web Service 3 */
+
+.header-web-service-3 {
+  position: relative;
+  background: url('../img/bg-header-app.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  position: relative;
+  .color-overlay {
+    padding-bottom: 480px;
+  }
+  .header-content {
+    padding-top: $giant;
+  }
+  .cta {
+    margin-bottom: $huge;
+    a {
+      margin-right: $mini;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    @include respond-to(phone) {
+      a {
+        width: 80%;
+        display: block;
+        margin: 0 auto $micro;
+        &:last-of-type {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .hero-img {
+    position: absolute;
+    right: 0;
+    bottom: -$mammoth;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 960px;
+    img {
+      @include prefixer(box-shadow,
+      0 0 16px 0 rgba( $dark-1,
+      0.16),
+      webkit moz spec);
+      border-radius: $small;
+    }
+  }
+  @include respond-to(laptop) {
+    .hero-img {
+      width: 80%;
+    }
+    .color-overlay {
+      padding-bottom: 320px;
+    }
+  }
+  @include respond-to(tablet) {
+    .hero-img {
+      width: 85%;
+    }
+    .color-overlay {
+      padding-bottom: 240px;
+    }
+  }
+  @include respond-to(phone) {
+    .hero-img {
+      width: 85%;
+    }
+    .color-overlay {
+      padding-bottom: 120px;
+    }
+  }
+}
+
+
+/* Event Hero 1 */
+
+.header-event-1 {
+  background: url('../img/bg-header-event.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+    .header-text {
+      margin-bottom: 0;
+    }
+  }
+  #countdown-2 {
+    margin: $huge auto;
+    .countdown-time {
+      display: inline-block;
+      margin-right: $small;
+      .counter {
+        font-family: $heading-font-family;
+        font-size: rem($medium);
+        color: $light-2;
+      }
+      .small {
+        color: $light-1;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    @include respond-to(phone) {
+      .countdown-time {
+        margin-right: $micro;
+        .counter {
+          font-size: rem($small);
+        }
+      }
+    }
+  }
+  .cta {
+    a {
+      margin-right: $mini;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    @include respond-to(phone) {
+      a {
+        width: 80%;
+        display: block;
+        margin: 0 auto $micro;
+        &:last-of-type {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+
+/* Event Hero 2 */
+
+.header-event-2 {
+  background: url('../img/bg-header-event.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+    .header-text {
+      margin-bottom: 0;
+    }
+  }
+  #countdown {
+    font-family: $heading-font-family;
+    font-size: rem(48);
+    margin: $huge auto;
+    color: $light-2;
+  }
+  .cta {
+    margin-bottom: $micro;
+  }
+  .announcement {
+    color: $light-1;
+  }
+}
+
+
+/* Event Hero 3 */
+
+.header-event-3 {
+  background: url('../img/bg-header-event.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-text {
+    padding-top: $large;
+    text-align: left;
+  }
+  @include respond-to(laptop) {
+    .header-text {
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+/* Event Music Hero */
+
+.header-event-music {
+  background: url('../img/bg-header-music.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+}
+
+
+/* Prodcut Hero 1 */
+
+.header-product-1,
+.header-product-2 {
+  background: url('../img/bg-header-product.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+    .header-text {
+      padding-top: $huge;
+      text-align: left;
+      .headline {
+        color: $dark-2;
+      }
+      .subline {
+        color: $dark-1;
+      }
+    }
+  }
+  .cta {
+    text-align: left;
+  }
+  .hero-img {
+    max-width: 400px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  @include respond-to(laptop) {
+    .header-content {
+      .header-text {
+        padding-top: 0;
+        text-align: center;
+      }
+    }
+    .cta {
+      text-align: center;
+      margin-bottom: $medium;
+    }
+  }
+  @include respond-to(phone) {
+    .cta {
+      .button-primary {
+        margin-bottom: $micro / 2;
+      }
+    }
+  }
+}
+
+
+/* Product 2 */
+
+.header-product-2 {
+  .header-content {
+    padding-top: $mammoth;
+  }
+}
+
+
+/* Ebook Hero 1 */
+
+.header-ebook-1 {
+  background: url('../img/bg-header-ebook.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+    .header-text {
+      margin-bottom: $large;
+      .headline {
+        color: $dark-2;
+      }
+      .subline {
+        color: $dark-1;
+      }
+    }
+    .cta {
+      margin-bottom: $huge;
+      a {
+        margin-right: $micro;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+      .cta-buttons {
+        margin-bottom: $micro;
+      }
+    }
+    .hero-img {
+      img {
+        max-width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+  @include respond-to(phone) {
+    .header-content {
+      .cta {
+        a {
+          display: block;
+          width: 80%;
+          margin: 0 auto $micro;
+          &:last-of-type {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Ebook Hero 2 */
+
+.header-ebook-2 {
+  background: url('../img/bg-header-ebook.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    .header-text {
+      padding-top: $huge;
+      text-align: left;
+      .headline {
+        color: $dark-2;
+      }
+      .subline {
+        color: $dark-1;
+      }
+    }
+  }
+  .cta {
+    text-align: left;
+    .input-box {
+      max-width: 70%;
+      background: $light-2;
+    }
+  }
+  .hero-img {
+    max-width: 480px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  @include respond-to(laptop) {
+    .header-content {
+      .header-text {
+        padding-top: 0;
+        text-align: center;
+      }
+    }
+    .cta {
+      text-align: center;
+      margin-bottom: $medium;
+      .input-box {
+        margin: $mini auto;
+      }
+    }
+  }
+  @include respond-to(phone) {
+    .cta {
+      .input-box {
+        max-width: 80%;
+      }
+      .button-primary {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+/* Freelance Hero - 1 */
+
+.header-freelance-1 {
+  background: url('../img/bg-header-agency.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+  }
+  .cta {
+    a {
+      margin-right: $mini;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  @include respond-to(phone) {
+    .cta {
+      a {
+        display: block;
+        width: 80%;
+        margin: 0 auto $micro;
+        &:last-of-type {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+
+/* Freelance Hero -2 */
+
+.header-freelance-2 {
+  background: url('../img/bg-header-agency.jpg') no-repeat center center;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+  .header-content {
+    padding-top: $giant;
+  }
+  .color-overlay {
+    padding-bottom: 0;
+  }
+  .header-text {
+    padding-top: $huge;
+    text-align: left;
+  }
+  .cta {
+    text-align: left;
+    a {
+      margin-right: $mini;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .hero-img {
+    img {
+      max-width: 720px;
+    }
+  }
+  @include respond-to(laptop) {
+    .header-text {
+      padding-top: 0;
+      text-align: center;
+    }
+    .cta {
+      text-align: center;
+      a {
+        display: block;
+        width: 80%;
+        margin: 0 auto $micro;
+        &:last-of-type {
+          margin: 0 auto;
+        }
+      }
+    }
+    .hero-img {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+/* Elearning Hero - 1 , 2 */
+
+.header-elearn-1,
+.header-elearn-2 {
+  background: url('../img/bg-header-elearning.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+}
+
+.header-elearn-2 {
+  .header-text {
+    padding-top: $mega;
+    text-align: left;
+    @include respond-to(laptop) {
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+/* Travel Hero 1 & 2*/
+
+.header-travel-1,
+.header-travel-2 {
+  @extend .header-agency-2;
+}
+
+.header-travel-2 {
+  .cta,
+  .header-text {
+    text-align: left;
+  }
+  .header-content {
+    padding-top: $mammoth;
+  }
+  .header-text {
+    padding-top: $mammoth;
+  }
+  @include respond-to(laptop) {
+    .header-text {
+      padding-top: 0;
+    }
+    .cta,
+    .header-text {
+      text-align: center;
+    }
+  }
+}
+
+.header-travel-1 {
+  .header-content {
+    padding-top: $mammoth*2;
+    @include respond-to(laptop) {
+      padding-top: $mammoth;
+    }
+  }
+}
+
+
+/* Hosting Hero  */
+
+.header-hosting-1,
+.header-hosting-2 {
+  background: url('../img/bg-header-hosting.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+}
+
+.header-hosting-1 {
+  .header-content {
+    padding-top: $giant;
+  }
+}
+
+
+/* Real Estate Hero  */
+
+.header-real-estate-1 {
+  background: url('../img/bg-header-real-estate-1.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+}
+
+.header-real-estate-2 {
+  background: url('../img/bg-header-real-estate-2.jpg') no-repeat center center fixed;
+  @include prefixer(background-size,
+  cover,
+  webkit moz o spec);
+}

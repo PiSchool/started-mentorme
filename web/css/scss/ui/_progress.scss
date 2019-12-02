@@ -1,0 +1,15 @@
+/**
+ *
+ * Progress Bar Styles
+ *
+ */
+
+.progress {
+  height: $micro/2;
+  box-shadow: none;
+  background: $stroke;
+  border-radius: 0;
+  .progress-bar {
+    background: $dark-2;
+  }
+}

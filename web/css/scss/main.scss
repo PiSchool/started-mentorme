@@ -1,0 +1,33 @@
+/**
+ *
+ *
+ Theme Name : Arpa
+ Description : A multipurpose landing page pack
+ Author : Pankaj Chakraborty <author@paperboatdesigns.com>
+ Current Version : 1.0.0
+ Last Change : 1.0.0
+ *
+ **/
+
+//////////////////
+//Plugins
+//////////////////
+@import 'scss-plugins/bourbon/bourbon';
+@import 'scss-plugins/breakpoint/breakpoint';
+@import 'scss-plugins/bootstrap/bootstrap';
+//////////////////
+//Base
+//////////////////
+@import 'base/base';
+//////////////////
+//UI
+//////////////////
+@import 'ui/ui';
+//////////////////
+//Sections
+//////////////////
+@import 'sections/sections';
+//////////////////
+//Pages
+//////////////////
+@import 'pages/pages';

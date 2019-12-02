@@ -1,0 +1,396 @@
+/**
+ *
+ * Features Sections
+ *
+ */
+
+
+/* Features 1 - App Features */
+
+.features-1 {
+  .feature {
+    i {
+      margin-bottom: $micro;
+      color: $set3-accent-1;
+      font-size: rem($medium);
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    .feature {
+      margin: $medium 0;
+    }
+  }
+}
+
+
+/* Features 2 - Agency Features */
+
+.features-2 {
+  position: relative;
+  padding: $huge*2 0;
+  text-align: left;
+  .section-heading {
+    .seperator {
+      margin-left: 0;
+    }
+  }
+  p {
+    margin-bottom: $medium;
+    color: $light-1;
+  }
+  .feature-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../img/bg-feature-agency.jpg') no-repeat;
+    @include prefixer(background-size,
+    cover,
+    webkit moz o spec);
+  }
+  @include respond-to(laptop) {
+    text-align: center;
+    padding-bottom: 0;
+    .section-heading {
+      .seperator {
+        margin-left: auto;
+      }
+    }
+    .feature-content {
+      margin-bottom: $huge * 2;
+    }
+    .feature-img {
+      bottom: 0;
+      left: 0;
+      position: relative;
+      height: $mammoth * 4;
+      width: 100%;
+    }
+  }
+}
+
+
+/* Features 3 - Web Service 3 Features */
+
+.features-3 {
+  padding-top: $giant + $mammoth;
+  .row-1 {
+    margin-bottom: $large;
+  }
+  ul {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  .icon {
+    float: left;
+    width: 14%;
+    margin: 0 auto $small;
+    text-align: center;
+    vertical-align: middle;
+    color: $dark-2;
+    font-size: rem(40);
+    line-height: 1;
+  }
+  .text {
+    float: left;
+    width: 80%;
+    margin-left: 6%;
+    text-align: left;
+    h4 {
+      margin: 0 auto $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    .row-1 {
+      margin: 0;
+    }
+    .feature2-item {
+      width: 90%;
+    }
+    .icon,
+    .text h4 {
+      margin: $small * 1.5 auto $small;
+    }
+  }
+  @include respond-to(phone) {
+    .feature2-item {
+      width: 100%;
+    }
+    .icon-medium {
+      font-size: rem(36);
+    }
+  }
+}
+
+
+/* Features 4 - Web Service 2 & Ebook 1 Features */
+
+.features-4 {
+  .first-row {
+    margin-bottom: $medium;
+  }
+  .feature {
+    text-align: left;
+    i {
+      margin-bottom: $mini;
+      color: $set4-accent-1;
+      font-size: rem($medium);
+      line-height: 1;
+    }
+    h4 {
+      margin-bottom: $micro;
+    }
+  }
+  @include respond-to(laptop) {
+    .first-row {
+      margin-bottom: 0;
+    }
+    .feature {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* Features 5 - Travel 2 Features */
+
+.features-5 {
+  position: relative;
+  padding: $huge*2 0;
+  .travel-feature-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../img/bg-feature-travel.jpg') no-repeat;
+    @include prefixer(background-size,
+    cover,
+    webkit moz o spec);
+  }
+  .feature {
+    margin: $medium 0;
+  }
+  i {
+    font-size: rem($medium);
+    margin-bottom: $micro;
+    color: $light-2;
+  }
+  h4 {
+    margin-bottom: $mini;
+  }
+  @include respond-to(laptop) {
+    padding-bottom: 0;
+    .feature-list {
+      margin-bottom: $huge * 2;
+    }
+    .travel-feature-img {
+      bottom: 0;
+      left: 0;
+      position: relative;
+      height: $mammoth * 4;
+      width: 100%;
+    }
+  }
+}
+
+
+/* Features 6 -Elearn 1 Features */
+
+.features-6 {
+  @extend .features-1;
+  .feature {
+    i {
+      color: $set4-accent-1;
+    }
+  }
+}
+
+
+/* Features 7 -Elearn 2 Features */
+
+.features-7 {
+  .section-heading {
+    h2 {
+      color: $light-2;
+    }
+    .seperator {
+      background: $light-2;
+    }
+  }
+  .feature {
+    padding: $small $micro / 2;
+    @extend %card;
+    i {
+      margin-bottom: $micro;
+      color: $dark-2;
+      font-size: rem($medium);
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+    @include respond-to(laptop) {
+      max-width: 400px;
+      margin: 0 auto $medium;
+    }
+  }
+}
+
+
+/* Features 8 - Hosting 1 & Web-Service 1 Features */
+
+.features-8 {
+  .feature-row-1 {
+    margin-bottom: $small;
+  }
+  .feature {
+    padding: $small;
+    border: 1px solid $stroke;
+    border-radius: $micro/4;
+    i {
+      margin-bottom: $micro;
+      color: $dark-2;
+      font-size: rem($small);
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    .feature-row-1 {
+      margin-bottom: 0;
+    }
+    .feature {
+      margin-bottom: $small;
+    }
+  }
+}
+
+
+/* Features 9 - Hosting-2, Event-3 & Product-2 Features */
+
+.features-9 {
+  .row-first {
+    margin-bottom: $large;
+  }
+  .icon {
+    margin: 0 auto;
+    color: $dark-2;
+    border-radius: 100%;
+    font-size: rem($medium);
+    line-height: $huge;
+    width: $huge;
+    height: $huge;
+    @extend %card;
+  }
+  .text {
+    margin-top: $small;
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    .row-first {
+      margin-bottom: 0;
+    }
+    .feature {
+      margin: $medium 0;
+    }
+  }
+}
+
+
+/* Features 10 - Real Estate 1 */
+
+.features-10 {
+  .row-first {
+    margin-bottom: $medium;
+  }
+  .feature-card {
+    @extend %card;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: $small;
+    text-align: left;
+    i {
+      position: absolute;
+      z-index: 2;
+      left: - $small;
+      top: 0;
+      font-size: rem($mammoth);
+      color: $stroke;
+    }
+    .content {
+      position: relative;
+      z-index: 9999;
+      h4 {
+        margin-bottom: $micro;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .row-first {
+      margin-bottom: 0;
+    }
+    .feature-card {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* Features 11 - Real Estate 2 */
+
+.features-11 {
+  .feature-card {
+    position: relative;
+    overflow: hidden;
+    @extend %card;
+    padding: $small;
+    i {
+      position: absolute;
+      z-index: 2;
+      left: - $small;
+      top: 0;
+      font-size: rem($mammoth);
+      color: $stroke;
+    }
+    .content {
+      position: relative;
+      z-index: 9999;
+      h4 {
+        margin-bottom: $micro;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .feature-card {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* Features 12 - Ebook 2 */
+
+.features-12 {
+  @extend .features-8;
+  .feature {
+    border: 1px solid $light-1;
+    i {
+      color: $light-2;
+    }
+  }
+}

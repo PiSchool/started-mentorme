@@ -1,0 +1,315 @@
+/**
+ *
+ * About Sections
+ *
+ */
+
+
+/* About 1 - Agency 1 */
+
+.about-1 {
+  .section-heading {
+    margin-bottom: $large;
+  }
+  .about-content {
+    padding-top: $mammoth;
+    text-align: left;
+    h3 {
+      margin-bottom: $small;
+    }
+    p {
+      margin-bottom: $medium;
+    }
+  }
+  .about-icons {
+    @extend %card;
+    margin-bottom: $small;
+    padding: $mini;
+    text-align: left;
+    i {
+      margin-bottom: $micro;
+      color: $dark-2;
+      font-size: $small;
+    }
+    h4 {
+      margin-bottom: $mini;
+    }
+  }
+  @include respond-to(laptop) {
+    .section-heading {
+      margin-bottom: $medium;
+    }
+    .about-content {
+      padding-top: 0;
+      text-align: center;
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* About 2 - Agency 2 */
+
+.about-2 {
+  position: relative;
+  padding: $huge * 2 0;
+  text-align: left;
+  .seperator {
+    margin-left: 0;
+  }
+  p {
+    margin-bottom: $medium;
+  }
+  .agency-about-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url('../img/bg-about-agency.jpg') no-repeat;
+    @include prefixer(background-size,
+    cover,
+    webkit moz o spec);
+  }
+  @include respond-to(laptop) {
+    padding-top: 0;
+    text-align: center;
+    .seperator {
+      margin-left: auto;
+    }
+    .agency-about-img {
+      top: 0;
+      left: 0;
+      height: $mammoth * 4;
+      width: 100%;
+      position: relative;
+      margin-bottom: $huge * 2;
+    }
+  }
+}
+
+
+/* Agency About 3 */
+
+.about-3 {
+  .about-content {
+    padding-top: $mammoth;
+    text-align: left;
+    .seperator {
+      margin-left: 0;
+    }
+  }
+  .about-img {
+    max-width: 480px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  @include respond-to(laptop) {
+    .about-content {
+      text-align: center;
+      margin-bottom: $medium;
+      .seperator {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+
+/* About 4 - Ebook Author About 1 */
+
+.about-4 {
+  .author-img {
+    max-width: 70%;
+    margin: 0 auto;
+    img {
+      border-radius: 100%;
+    }
+  }
+  .author-info {
+    margin-top: $large;
+    text-align: left;
+    .author-name {
+      margin-bottom: $small;
+      padding-bottom: $mini;
+      border-bottom: 1px solid $stroke;
+    }
+    .author-description {
+      margin-bottom: $medium;
+    }
+    .author-social {
+      ul {
+         :last-child {
+          margin-right: 0;
+        }
+        li {
+          display: inline-block;
+          margin: 0 $mini 0 0;
+          a {
+            color: $dark-1;
+            font-size: $micro;
+            @include transition(all .1s $base-timing);
+            &:active,
+            &:focus,
+            &:hover {
+              color: $dark-2;
+            }
+          }
+        }
+      }
+    }
+    @include respond-to(laptop) {
+      text-align: center;
+    }
+  }
+}
+
+
+/* About 5 - Ebook Author About 2 */
+
+.about-5 {
+  .author-img {
+    max-width: 70%;
+    margin: 0 auto $mini;
+    img {
+      border-radius: 100%;
+    }
+  }
+  .author-name {
+    margin-bottom: $micro;
+  }
+  .author-social {
+    ul {
+       :last-child {
+        margin-right: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0 $mini 0 0;
+        a {
+          color: $dark-1;
+          font-size: $micro;
+          @include transition(all .1s $base-timing);
+          &:active,
+          &:focus,
+          &:hover {
+            color: $dark-2;
+          }
+        }
+      }
+    }
+  }
+  .author-description {
+    padding-top: $small;
+    text-align: left;
+    .seperator {
+      margin: $micro auto $mini 0;
+      background: $stroke;
+    }
+    .note {
+      margin-bottom: $medium;
+    }
+  }
+}
+
+
+/* About 6 - Restaurent & Coffeehouse About */
+
+.about-6 {
+  .seperator {
+    margin-left: 0;
+  }
+  .about-text {
+    padding-top: $mammoth;
+    text-align: left;
+    .section-heading {
+      margin-bottom: $small;
+    }
+  }
+  @include respond-to(laptop) {
+    .about-text {
+      padding-top: 0;
+      text-align: center;
+      margin-bottom: $medium;
+    }
+    .seperator {
+      margin-left: auto;
+    }
+    .about-img {
+      margin-bottom: $mini;
+    }
+  }
+}
+
+
+/* About 7 - Freelance About 1 */
+
+.about-7 {
+  .about-img {
+    max-width: 60%;
+    margin: 0 auto $medium;
+    img {
+      border-radius: 100%;
+    }
+  }
+  .about-info {
+    margin-bottom: $medium;
+    h3 {
+      margin-bottom: $mini;
+    }
+  }
+  .about-social {
+    ul {
+       :last-child {
+        margin-right: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0 $mini 0 0;
+        a {
+          color: $dark-1;
+          font-size: $micro;
+          @include transition(all .1s $base-timing);
+          &:active,
+          &:focus,
+          &:hover {
+            color: $dark-2;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* About 8 - Freelance About 2 */
+
+.about-8 {
+  .about-info {
+    padding-top: $small;
+    text-align: left;
+    h3 {
+      margin-bottom: $micro;
+    }
+  }
+  .bars {
+    text-align: left;
+    .bar {
+      margin-bottom: $mini;
+      h5 {
+        margin-bottom: $micro/2;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include respond-to(laptop) {
+    .about-info {
+      text-align: center;
+      margin-bottom: $medium;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+/*----------  Global Helper Classes  ----------*/
+
+
+/* Gradient Backgrounds */
+
+.background-set-1 {
+  @include linear-gradient(to right, $set1-accent-1, $set1-accent-2);
+}
+
+.background-set-2 {
+  @include linear-gradient(to right, $set2-accent-1, $set2-accent-2);
+}
+
+.background-set-3 {
+  @include linear-gradient(to right, $set3-accent-1, $set3-accent-2);
+}
+
+.background-set-4 {
+  @include linear-gradient(to right, $set4-accent-1, $set4-accent-2);
+}
+
+
+/* Light & Dark Backgrounds */
+
+.dark-background-1 {
+  background: $dark-1;
+}
+
+.dark-background-2 {
+  background: $dark-2;
+}
+
+.light-background-1 {
+  background: $light-1;
+}
+
+.light-background-2 {
+  background: $light-2;
+}
+
+
+/* Gradient Overlays */
+
+.overlay-set-1 {
+  @include linear-gradient(to right, transparentize($set1-accent-1, 0.3), transparentize($set1-accent-2, 0.3));
+}
+
+.overlay-set-2 {
+  @include linear-gradient(to right, transparentize($set2-accent-1, 0.3), transparentize($set2-accent-2, 0.3));
+}
+
+.overlay-set-3 {
+  @include linear-gradient(to right, transparentize($set3-accent-1, 0.3), transparentize($set3-accent-2, 0.3));
+}
+
+.overlay-set-4 {
+  @include linear-gradient(to right, transparentize($set4-accent-1, 0.3), transparentize($set4-accent-2, 0.3));
+}
+
+
+/* Dark & Light Overlay */
+
+.light-overlay {
+  background: transparentize($light-2, 0.1);
+}
+
+.dark-overlay {
+  background: transparentize($dark-2, 0.1);
+}
+
+
+/* Pattern Overlay */
+
+.pattern-overlay {
+  background: url('../img/dot.png') repeat;
+  background-color: transparentize($dark-2, 0.3);
+}
+
+
+/* Texture Overlay */
+
+.texture-overlay {
+  background: url('../img/texture.png') repeat;
+}
+
+
+/* Logo */
+
+.logo {
+  img {
+    width: auto;
+    max-height: $mini;
+  }
+}
+
+
+/* Section Heading Global */
+
+.section-heading {
+  margin-bottom: $medium;
+  h2 {
+    text-transform: capitalize;
+  }
+}
+
+
+/* Section border */
+
+.section-border {
+  border-bottom: 1px solid $stroke;
+}
+
+
+/* Section padding half */
+
+.section-padding-half {
+  padding: $giant/2 0;
+}
+
+
+/* Section Text Color */
+
+.section-text-dark {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark-2;
+  }
+  p {
+    color: $dark-1;
+  }
+}
+
+.section-text-light {
+  .section-heading {
+    h2 {
+      color: $light-2;
+    }
+    .seperator {
+      background: $light-2;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $light-2;
+  }
+  p {
+    color: $light-1;
+  }
+}
