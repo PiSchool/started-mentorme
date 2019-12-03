@@ -1,0 +1,62 @@
+swagger: "2.0"
+
+info:
+  title: "Unigraph API"
+  description: ""
+  version: "1.0"
+  contact:
+    name: Andrea Santilli and Fabrizo Lo Scudo
+    email: andrea.santilli@live.it
+
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+basePath: /v1.0
+
+schemes:
+ - http
+securityDefinitions:
+  basicAuth:
+    type: basic
+    x-basicInfoFunc: api.utils.basic_auth
+
+paths:
+  /search:
+    get:
+      operationId: api.researcher.search_person
+      parameters:
+        - name: text
+          in: query
+          description: Text to search for
+          required: true
+          type: string
+
+      responses:
+        '200':
+          description: 'Fetch a paper from the database'
+          schema:
+            $ref: '#/definitions/User'
+
+
+tags:
+- name: social
+  description: Operations for social service features
+- name: reccomander
+  description: Operations for reccomander service features
+- name: account
+  description: Account API
+- name: papers
+  description: API for papers documents
+
+
+definitions:
+  User:
+    type: object
+    properties:
+      name: { type: string }
+      surname: { type: string }
+      date: { type: string }
+      username: { type: string }
+      email: { type: string }
+      password: { type: string }

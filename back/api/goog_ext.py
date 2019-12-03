@@ -6,7 +6,7 @@ import requests
 
 class GoogleExtractor(object):
 
-	def __init__(self, time_sec=2.0):
+	def __init__(self, time_sec=25.0):
 		"""
 		Extract startupper information from Google!
 		:param time_sec: seconds to wait before consecutive calls
@@ -33,7 +33,13 @@ class GoogleExtractor(object):
 		html = self._search_name(name)
 		soup = BeautifulSoup(html, 'html.parser')
 		#hits = self._extract_hits(soup)
-		return self._check_startup(soup)
+		#return self._check_startup(soup)
+		return self._check_startup_heuristc2(soup), self._get_first_link(soup)
+
+	def _get_first_link(self, soup):
+		search_cards = soup.findAll("div", {"class": "g"})
+		first = search_cards[0]
+		return first.find("a")['href']
 
 	def _search_name(self, name: str):
 		"""
@@ -47,6 +53,7 @@ class GoogleExtractor(object):
 		}
 		name = name.replace(' ', '+')
 		r = requests.get(f'https://www.google.com/search?&q="{name}"+startup&oq="{name}"+startup', headers=headers)
+		#TODO add check captcha
 		return r.text
 
 	def _extract_hits(self, soup) -> int:
@@ -69,6 +76,19 @@ class GoogleExtractor(object):
 		for card in first_3_cards:
 			if self._extract_search_card(card):
 				return True
+		return False
+
+	def _check_startup_heuristc2(self, soup, threshold=0.5) -> bool:
+		search_cards = soup.findAll("div", {"class": "g"})
+		count = 0.0
+		for card in search_cards:
+			if self._extract_search_card(card):
+				count += 1
+		if len(search_cards) != 0:
+			if count / len(search_cards) >= threshold:
+				return True
+			else:
+				return False
 		return False
 
 	def _extract_search_card(self, card_soup):
