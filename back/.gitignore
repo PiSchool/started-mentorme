@@ -1,0 +1,11 @@
+
+my_venv_dir/
+.cache
+.DS_Store
+*.pyc
+/prova/
+.idea/encodings.xml
+.idea/flask-couch-microservice.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml

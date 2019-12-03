@@ -9,10 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Title -->
-  <title>Medical Support</title>
-  <meta name="description" content="Movify: A new way to explore movies">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Movies,Recommender System,Recommendation,Exploring,Suggest Me Movie,Startup,">
+  <title>Unitech</title>
   <!-- Favicons (High Resolution) -->
   <!-- Icon Fonts -->
   <link rel="stylesheet" href="icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
@@ -35,7 +32,7 @@
 
   <script type="text/javascript">
 
-    function add_table_row(name, description){
+    function add_table_row(name, description, link){
       /*
       Funzione per inserire un risultato (riga) all'interno della tabella
       */
@@ -45,12 +42,14 @@
 
 
       table_head = table_head + '<th scope="col" id="table-col">Name</th>'
-      table_body = table_body + "<td><a target='_blank' href=\"#\">" + name + "</a></td>"
+      table_body = table_body + "<td>" + name + "</td>"
 
 
-      table_head = table_head + '<th scope="col" id="table-col">Description</th>'
-      table_body = table_body + "<td><a target='_blank' href=\"#\">" + description + "</a></td>"
+      table_head = table_head + '<th scope="col" id="table-col">Cognome</th>'
+      table_body = table_body + "<td>" + description + "</td>"
 
+      table_head = table_head + '<th scope="col" id="table-col">Read More</th>'
+      table_body = table_body + "<td><a class=\"btn btn-primary\" target=\'_blank\' href=\""+ link + "\">Read More &rarr;</a></td>"
 
       table_head = table_head + "</tr>"
 
@@ -62,16 +61,37 @@
       $( "#table-body").append(table_body);
     }
 
+    function add_card(name, description){
+
+       card =  `<div class="card mb-4"> <div class="card-body"> <h2 class="card-title"> ${name}</h2> <p class="card-text"> ${description}</p> <a class="btn btn-primary">Read More &rarr;</a> </div> </div>`
+
+      $("#cblock").append(card);
+    }
 
 
+    function get_results(query_string){
+        $.get("http://localhost:2000/v1.0/search?text="+ query_string,  function(data, status){
+        //alert("Data: " + data + "\nStatus: " + status);
+        risultati = data
+        console.log(risultati)
+        //Itero su tutte le triple e le inserisco nella tabella
+        risultati.forEach(function(risultato) {
+          console.log(risultato);
+          // add_card(risultato['first'], risultato['last'])
+          add_table_row(risultato['first'], risultato['last'], risultato['link'])
+        });
 
-    function do_get_query_graphDB(query_string){
 
+        $(".cat").css("visibility", "hidden");
+        $(".cat").remove();
+      }, "json");
     }
 
     function preprocess_string(query_string){
-      add_table_row('Andrea Santilli', 'Esperto in programmazione bla bla ')
-      add_table_row('Fabrizo Lo scudo', 'Esperto in  bla bla ')
+      get_results(query_string)
+      //add_card('Andrea Santilli', 'Esperto in programmazione bla bla ')
+      //add_card('Fabrizo Lo scudo', 'Esperto in  bla bla ')
+
     }
 
     $( document ).ready(function() {
@@ -135,7 +155,9 @@
   <!-- Navigation End -->
   <section class="header header-web-service-1" id="hero">
     <div class="light-background-1">
-      <div class="container header-content">
+      <div class="container header-content" id="cblock">
+        <img src="img/meowtor.gif" class="cat" style="max-width: 40%;">
+        <p class="cat">Finding your Meowtor, please wait...</p>
         <table class="table table-striped">
           <thead id="table-head">
           </thead>

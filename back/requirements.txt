@@ -7,3 +7,4 @@ injector
 flask_cors
 requests
 graypy
+beautifulsoup4
