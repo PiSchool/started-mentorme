@@ -1,9 +1,0 @@
-Flask
-connexion[swagger-ui]
-python-dotenv
-Flask-Injector
-fastavro
-injector
-flask_cors
-requests
-graypy

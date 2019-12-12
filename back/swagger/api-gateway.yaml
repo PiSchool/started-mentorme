@@ -1,8 +1,8 @@
 swagger: "2.0"
 
 info:
-  title: "Unigraph API"
-  description: ""
+  title: "MentorMe API"
+  description: "Find your next mentor!"
   version: "1.0"
   contact:
     name: Andrea Santilli and Fabrizo Lo Scudo
@@ -28,35 +28,25 @@ paths:
       parameters:
         - name: text
           in: query
-          description: Text to search for
+          description: Name of a researcher (first and last name)
           required: true
           type: string
 
       responses:
         '200':
-          description: 'Fetch a paper from the database'
+          description: 'Return a mentor from the database'
           schema:
-            $ref: '#/definitions/User'
-
-
-tags:
-- name: social
-  description: Operations for social service features
-- name: reccomander
-  description: Operations for reccomander service features
-- name: account
-  description: Account API
-- name: papers
-  description: API for papers documents
+            $ref: '#/definitions/MentorsList'
 
 
 definitions:
-  User:
-    type: object
-    properties:
-      name: { type: string }
-      surname: { type: string }
-      date: { type: string }
-      username: { type: string }
-      email: { type: string }
-      password: { type: string }
+  MentorsList:
+    type: array
+    items:
+      type: object
+      properties:
+        author_id: { type: string }
+        first: { type: string }
+        last: { type: string }
+        link: { type: string }
+        middle: { type: string }
