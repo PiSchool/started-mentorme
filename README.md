@@ -21,7 +21,7 @@ To use the frontend, once you have the server running, you just have to open in 
 ![MentorMe logo](web/img/screen_1.png "MentorMe logo")
 
 ### Startup Classifier
-The folder *classifier* contains a new *README.md* file with the information on how to run and use the classifier.
+The folder *classifier* contains another *README.md* file with the information on how to run and use the classifier.
 
 # Author
 
