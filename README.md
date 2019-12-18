@@ -6,7 +6,7 @@ MentorMe is a mentor recommender system for researchers. You input your name alo
 
 ## Usage
 ### Backend API service
-To start the server API you need python installed in your system.
+To start the server API you need python3 installed in your system.
 Then type the following commands in the terminal from the *back* folder of this repository:
 
 ```
@@ -20,8 +20,8 @@ To use the frontend, once you have the server running, you just have to open in 
 
 ![MentorMe logo](web/img/screen_1.png "MentorMe logo")
 
-### Startup Classifier (Research)
-The folder *classifier* contains juppyter notebook files about the startup classifier research done during the program. Consult the report for more information.
+### Startup Classifier
+The folder *classifier* contains a new *README.md* file with the information about running and using the classifier.
 
 # Author
 

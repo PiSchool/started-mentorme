@@ -81,5 +81,5 @@ y_pred = clf_lr.predict(test_vec)
 acc = accuracy_score(y_test, y_pred)
 print(f'LR \t : {acc}')
 
-#with open('/content/gdrive/My Drive/MyStarted/data/pipeline.pkl', 'wb+') as output: pickle.dump(pipeline, output)
-#with open('/content/gdrive/My Drive/MyStarted/data/clf.pkl', 'wb+') as output: pickle.dump(clf_lr, output)
+with open('pipeline.pkl', 'wb+') as output: pickle.dump(pipeline, output)
+with open('clf.pkl', 'wb+') as output: pickle.dump(clf_lr, output)

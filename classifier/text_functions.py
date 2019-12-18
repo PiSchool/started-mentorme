@@ -10,10 +10,10 @@ from textblob import TextBlob
 """
 Uncomment the first time!
 """
-#nltk.download('punkt')
-#nltk.download('stopwords')
-#nltk.download('wordnet')
-#nltk.download('averaged_perceptron_tagger')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
 
 stop_words_ = set(stopwords.words('english'))
 wn = WordNetLemmatizer()
