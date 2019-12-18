@@ -24,7 +24,7 @@ According to our classifier, your website is a startup!
 
 ## Train the classifier
 **IMPORTANT:** Before training the classifier, move the files of your previous model (`pipeline.pkl`, `clf.pkl`) in a different folder. \
-**IF YOU DON'T DO THAT, THE PRETRAINED CLASSIFIER WILL BE ERASED!** \
+**IF YOU DON'T DO THAT, THE PRE-TRAINED CLASSIFIER WILL BE ERASED!** \
 If you want to re-train the model, just type the following command:
 ```
 python3 train_clf.py
