@@ -10,7 +10,7 @@ To start the server API you need python3 installed in your system.
 Then type the following commands in the terminal from the *back* folder of this repository:
 
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 python3 app.py
 ```
 Once you have the server running, you can consult the API documentation at the page ``http://localhost:2000/v1.0/ui/``
