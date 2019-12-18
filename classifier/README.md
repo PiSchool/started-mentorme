@@ -5,7 +5,7 @@ This folder contains all the files to use the startup classifier and eventually 
 You need also python3 installed on your system.
 Then you have to run the following command from the classifier directory:
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 ## Use the classifier (Predict)
 To use the startup classifier you just need to type the following command from the classifier directory:
