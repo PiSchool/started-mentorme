@@ -1,7 +1,7 @@
-# STARTUP CLASSIFIER
-This folder contains all the files to use the startup classifier and eventually retrain it .
+# Startup Classifier
+This folder contains all the files to use the startup classifier and eventually re-train it .
 ## Requirements
-**IMPORTANT:** You need first to download from the Google Drive folder the file `pipeline.pkl` and insert it into this folder. \
+**IMPORTANT:** You need first to download from the Data folder in Google Drive the file `pipeline.pkl` and insert it into this folder. \
 You need also python3 installed on your system.
 Then you have to run the following command from the classifier directory:
 ```
@@ -24,8 +24,8 @@ According to our classifier, your website is a startup!
 
 ## Train the classifier
 **IMPORTANT:** Before training the classifier, move the files of your previous model (`pipeline.pkl`, `clf.pkl`) in a different folder. \
-**If you don't do that, the pretrained classifier will be erased!** \
-If you want to retrain the model, just type the following command:
+**IF YOU DON'T DO THAT, THE PRETRAINED CLASSIFIER WILL BE ERASED!** \
+If you want to re-train the model, just type the following command:
 ```
 python3 train_clf.py
 ```
